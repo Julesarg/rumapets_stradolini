@@ -1,0 +1,309 @@
+body div {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+body div .fixedTop {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+body div .fixedTop .headerBox {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+body div .fixedTop .headerBox .headerBox_left {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: flex-end;
+}
+body div .fixedTop .headerBox .headerBox_left p {
+  display: block;
+  width: fit-content;
+  opacity: 0.4;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  word-spacing: 10rem;
+  text-transform: uppercase;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+  padding-top: 5px;
+  padding-right: 10%;
+}
+body div .fixedTop .headerBox .headerBox_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+}
+body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
+  display: flex;
+  width: 50%;
+  height: 40px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 3%;
+}
+body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+  display: flex;
+  height: 24px;
+  width: auto;
+}
+body div .fixedTop .headerBox .headerBox_right p {
+  display: block;
+  width: 50%;
+  opacity: 0.4;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: 500;
+  word-spacing: 10rem;
+  text-transform: uppercase;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding: 0%;
+  padding-top: 5px;
+  padding-left: 10%;
+}
+body div .fixedTop .navegacion .nav {
+  background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+  width: 100%;
+  height: 30px;
+}
+body div .fixedTop .navegacion .nav .container-logo-reduced {
+  display: none;
+}
+body div .fixedTop .navegacion .nav .toggle {
+  display: none;
+}
+body div .fixedTop .navegacion .nav .toggle img {
+  height: 20px;
+  width: 20px;
+}
+body div .fixedTop .navegacion .nav .nav-menu {
+  list-style: none;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 8px;
+  border-bottom-color: white;
+}
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+}
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item:hover,
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item:active {
+  background-color: #8f3f7d;
+  transition: 0.6s;
+}
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 14.28%;
+}
+body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
+  height: 110px;
+  width: auto;
+  position: relative;
+  top: 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  body div .fixedTop .headerBox {
+    height: 33px;
+  }
+  body div .fixedTop .headerBox .headerBox_left p {
+    font-size: 0.7rem;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
+    height: 33px;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+    height: 22px;
+  }
+  body div .fixedTop .headerBox .headerBox_right p {
+    font-size: 0.7rem;
+  }
+
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item a {
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
+    height: 90px;
+    top: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body div .fixedTop .headerBox .headerBox_left p {
+    padding-right: 15%;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
+    height: 33px;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+    height: 22px;
+  }
+  body div .fixedTop .headerBox .headerBox_right p {
+    padding-left: 15%;
+  }
+
+  body div .fixedTop .navegacion .nav {
+    height: 35px;
+    border-bottom-style: solid;
+    border-bottom-width: 8px;
+    border-bottom-color: white;
+  }
+  body div .fixedTop .navegacion .nav .container-logo-reduced {
+    display: flex;
+    height: 110px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 70px;
+  }
+  body div .fixedTop .navegacion .nav .container-logo-reduced img {
+    height: 90px;
+    width: auto;
+    z-index: 1000;
+  }
+  body div .fixedTop .navegacion .nav .toggle {
+    display: flex;
+    align-items: center;
+    width: 10%;
+    height: 27px;
+    padding-left: 10px;
+    background-color: transparent;
+    border-style: none;
+  }
+  body div .fixedTop .navegacion .nav .toggle img {
+    height: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+
+  body div .fixedTop .navegacion .nav .nav-menu {
+    flex-direction: column;
+    margin-top: 32px;
+    padding-top: 50px;
+    width: 100%;
+    height: calc(100% - 33px);
+    overflow-y: auto;
+    background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    position: fixed;
+    left: -100%;
+    align-items: center;
+    transition: 0.6s;
+  }
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item {
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
+  body div .fixedTop .navegacion .nav .nav-menu.nav-menu_visible {
+    left: 0px;
+  }
+
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
+    display: none;
+  }
+}
+@media screen and (max-width: 576px) {
+  body div .fixedTop .headerBox {
+    height: 29px;
+  }
+  body div .fixedTop .headerBox .headerBox_left p {
+    font-size: 0.6rem;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
+    height: 29px;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+    height: 20px;
+  }
+  body div .fixedTop .headerBox .headerBox_right p {
+    font-size: 0.6rem;
+  }
+
+  body div .fixedTop .navegacion .nav {
+    height: 32px;
+  }
+  body div .fixedTop .navegacion .nav .container-logo-reduced img {
+    height: 80px;
+  }
+  body div .fixedTop .navegacion .nav .toggle {
+    height: 25px;
+  }
+  body div .fixedTop .navegacion .nav .toggle img {
+    height: 18px;
+    padding-top: 1px;
+  }
+  body div .fixedTop .navegacion .nav .nav-menu {
+    margin-top: 25px;
+    padding-top: 50px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  font-size: 14px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main {
+  flex: 1;
+}
+
+/*# sourceMappingURL=App.css.map */

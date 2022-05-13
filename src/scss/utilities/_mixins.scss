@@ -1,0 +1,39 @@
+@mixin sizes($width,$height){
+width: $width;
+height: $height;
+}
+@mixin display($display,$flexDirection){
+    display: $display;
+    flex-direction: $flexDirection;
+}
+
+@mixin margin($top, $bottom, $left, $right){
+    margin-top: $top;
+    margin-bottom: $bottom;
+    margin-left: $left;
+    margin-right: $right;
+}
+
+@mixin padding($top, $bottom, $left, $right){
+    padding-top: $top;
+    padding-bottom: $bottom;
+    padding-left: $left;
+    padding-right: $right;
+}
+@mixin cajasindex ($direction, $justify, $margin-top, $width) {
+    display:flex;
+    flex-direction:$direction;
+    justify-content:$justify;
+    margin-top:$margin-top;
+    width:$width;
+    overflow: hidden;
+}
+@mixin textoTitulos{
+    display: block;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: $opacidadnegro4;
+    letter-spacing: -4px;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;}

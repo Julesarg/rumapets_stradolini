@@ -1,0 +1,284 @@
+//1920//
+//Header
+body div {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .fixedTop {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    //header with cart icon
+    .headerBox {
+      display: flex;
+      @include sizes(100%, 40px);
+      background-color: white;
+      .headerBox_left {
+        display: flex;
+        @include sizes(50%, 100%);
+        align-items: flex-end;
+        p {
+          display: block;
+          width: fit-content;
+          opacity: 0.4;
+          color: black;
+          font-size: 0.8rem;
+          font-weight: 500;
+          word-spacing: 10rem;
+          text-transform: uppercase;
+          @include margin(0%, 0%, 0%, 0%);
+          padding: 0%;
+          padding-top: 5px;
+          padding-right: 10%;
+        }
+      }
+      .headerBox_right {
+        @include display(flex, row);
+        justify-content: space-between;
+        align-items: flex-start;
+        @include sizes(50%, 100%);
+        .headerBox_right-img-container {
+          display: flex;
+          width: 50%;
+          height: 40px;
+          align-items: flex-end;
+          justify-content: flex-end;
+          @include margin(0%, 0%, 0%, 3%);
+          .imgCarrito {
+            display: flex;
+            height: 24px;
+            width: auto;
+          }
+        }
+        p {
+          display: block;
+          width: 50%;
+          opacity: 0.4;
+          color: black;
+          font-size: 0.8rem;
+          font-weight: 500;
+          word-spacing: 10rem;
+          text-transform: uppercase;
+          @include margin(0%, 0%, 0%, 0%);
+          padding: 0%;
+          padding-top: 5px;
+          padding-left: 10%;
+        }
+      }
+    }
+    //header with navmenu
+    .navegacion {
+      .nav {
+        background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+        @include sizes(100%, 30px);
+        .container-logo-reduced {
+          display: none;
+        }
+        .toggle {
+          display: none;
+          img {
+            height: 20px;
+            width: 20px;
+          }
+        }
+        .nav-menu {
+          list-style: none;
+          @include sizes(100%, 30px);
+          @include display(flex, row);
+          @include margin(0%, 0%, 0%, 0%);
+          padding-left: 0px;
+          border-bottom-style: solid;
+          border-bottom-width: 8px;
+          border-bottom-color: white;
+          .nav-menu-item {
+            @include display(flex, row);
+            justify-content: center;
+            align-items: center;
+            width: 14.28%;
+            a {
+              text-decoration: none;
+              color: white;
+              font-weight: 700;
+              letter-spacing: 0.02em;
+              text-shadow: 1px 1px 1px rgba(0,0,0, 0.1);
+            }
+          }
+          .nav-menu-item:hover,
+          .nav-menu-item:active {
+            background-color: #8f3f7d;
+            transition: 0.6s;
+          }
+          .nav-menu-img {
+            @include display(flex, row);
+            justify-content: center;
+            align-items: center;
+            width: 14.28%;
+            img {
+              height: 110px;
+              width: auto;
+              position: relative;
+              top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//1024//
+@media screen and (max-width: 1024px) {
+  body div .fixedTop .headerBox {
+    height: 33px;
+    .headerBox_left {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    .headerBox_right {
+      .headerBox_right-img-container{
+        height: 33px;
+       .imgCarrito {
+          height: 22px;
+        }
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item a {
+    font-weight: 600;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+  }
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
+    height: 90px;
+    top: 0px;
+  }
+}
+
+//768//
+@media screen and (max-width: 768px) {
+  body div .fixedTop .headerBox {
+    .headerBox_left {
+      p {
+        padding-right: 15%;
+      }
+    }
+    .headerBox_right {
+      .headerBox_right-img-container{
+        height: 33px;
+       .imgCarrito {
+          height: 22px;
+        }
+      }
+      p {
+        padding-left: 15%;
+      }
+    }
+  }
+  body div .fixedTop .navegacion .nav {
+    height: 35px;
+    border-bottom-style: solid;
+    border-bottom-width: 8px;
+    border-bottom-color: white;
+    .container-logo-reduced {
+      display: flex;
+      height: 110px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      bottom: 70px;
+      img {
+        height: 90px;
+        width: auto;
+        z-index: 1000;
+      }
+    }
+    .toggle {      
+      display: flex;
+      align-items: center;
+      width: 10%;
+      height: 27px;
+      padding-left: 10px;
+      background-color: transparent;
+      border-style: none;
+      img{
+        height: 20px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+      }
+    }
+  }
+  body div .fixedTop .navegacion .nav .nav-menu {
+    flex-direction: column;
+    margin-top: 32px;
+    padding-top: 50px;
+    @include sizes(100%, calc(100% - 33px));
+    overflow-y: auto;
+    background: linear-gradient(90deg, #ffb181 35%, #d85b8c 75%);
+    position: fixed;
+    left: -100%;
+    align-items: center;
+    transition: 0.6s;
+    .nav-menu-item {
+      width: 100%;
+      @include padding(1%, 1%, 0%, 0%);
+    }
+  }
+  body div .fixedTop .navegacion .nav .nav-menu.nav-menu_visible {
+    left: 0px;
+  }
+  body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
+    display: none;
+  }
+}
+
+//576//
+@media screen and (max-width: 576px) {
+  body div .fixedTop .headerBox {
+    height: 29px;
+    .headerBox_left {
+      p {
+        font-size: 0.6rem;
+      }
+    }
+    .headerBox_right {
+      .headerBox_right-img-container {
+        height: 29px;
+        .imgCarrito {
+          height: 20px;
+        }
+      }
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+
+
+
+  body div .fixedTop .navegacion .nav {
+    height: 32px;
+    .container-logo-reduced {
+      img {
+        height: 80px;
+      }
+    }
+    .toggle {
+      height: 25px;
+      img {
+        height: 18px;
+        padding-top: 1px;
+      }
+    }
+    .nav-menu {
+      margin-top: 25px;
+      padding-top: 50px;
+    }
+  }  
+}

@@ -1,0 +1,23 @@
+@import "variables";
+@import "utilities/mixins";
+@import "base/typography";
+@import "main";
+@import "header";
+@import "navbar";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  width: 100%;
+  flex-flow: column;
+  font-size: 14px;
+  @include padding(100px, 20px, 20px, 20px);
+}
+main {
+  flex: 1;
+}
