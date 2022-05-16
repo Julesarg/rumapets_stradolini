@@ -146,6 +146,90 @@ body div {
     text-align: center;
     margin-top: 10px;
   }
+  .cajaCarritoProducto {
+    @include sizes(10%, fit-content);
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
+    font-weight: 600;
+    color: #fa576a;
+    padding-left: 20px;
+    padding-right: 20px;
+    .cantidadProducto {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 90%;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-size: 0.8rem;
+        color: #c95663;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .cantidadProductoInterior {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10px;
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-style: none;
+          width: 33%;
+          margin-left: 10px;
+          margin-right: 10px;
+          height: 20px;
+          background-color: transparent;
+          p {
+            font-size: 1.3rem;
+            color: #e7237e;
+            border-bottom-style: none;
+          }
+        }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 33%;
+          p {
+            font-size: 1rem;
+            font-weight: 600;
+            color: #311519;
+            text-align: center;
+            width: 50%;
+            border-bottom-style: none;
+          }
+        }
+      }
+    }
+    .agregarAlCarrito {
+      display: flex;
+      width: 90%;
+      height: 40px;
+      border-radius: 40px;
+      background-color: #d9737f;
+      box-shadow: 2px 2px 1px rgb(0 0 0 / 20%);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      p {
+        font-weight: 600;
+        color: white;
+        border-bottom-style: none;
+      }
+    }
+  }
 }
 
 //1024//
