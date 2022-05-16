@@ -1,5 +1,5 @@
-const NavbarToggle = () =>{
-    alert("hola")
-      }
+const NavbarToggle = () => {
+  console.log("hola");
+};
 
 export default NavbarToggle;

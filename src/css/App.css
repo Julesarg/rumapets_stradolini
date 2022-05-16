@@ -48,20 +48,37 @@ body div .fixedTop .headerBox .headerBox_right {
   height: 100%;
 }
 body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
-  display: flex;
-  width: 50%;
+  width: fit-content;
   height: 40px;
+  display: flex;
   align-items: flex-end;
   justify-content: flex-end;
+  background-color: transparent;
+  border-style: none;
+  cursor: pointer;
   margin-top: 0%;
   margin-bottom: 0%;
   margin-left: 0%;
   margin-right: 3%;
 }
-body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCart {
   display: flex;
   height: 24px;
   width: auto;
+}
+body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCartCounter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 13px;
+  right: 8px;
+  width: 16px;
+  height: 40%;
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  font-weight: 700;
 }
 body div .fixedTop .headerBox .headerBox_right p {
   display: block;
@@ -108,7 +125,7 @@ body div .fixedTop .navegacion .nav .nav-menu {
   padding-left: 0px;
   border-bottom-style: solid;
   border-bottom-width: 8px;
-  border-bottom-color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.9);
 }
 body div .fixedTop .navegacion .nav .nav-menu .nav-menu-item {
   display: flex;
@@ -142,6 +159,11 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   position: relative;
   top: 3px;
 }
+body div .ItemListContainer {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
 
 @media screen and (max-width: 1024px) {
   body div .fixedTop .headerBox {
@@ -153,8 +175,14 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
     height: 33px;
   }
-  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCart {
     height: 22px;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCartCounter {
+    width: 13px;
+    height: 38%;
+    font-weight: 700;
+    font-size: 0.67rem;
   }
   body div .fixedTop .headerBox .headerBox_right p {
     font-size: 0.7rem;
@@ -175,10 +203,7 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   body div .fixedTop .headerBox .headerBox_left p {
     padding-right: 15%;
   }
-  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
-    height: 33px;
-  }
-  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCart {
     height: 22px;
   }
   body div .fixedTop .headerBox .headerBox_right p {
@@ -259,8 +284,14 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container {
     height: 29px;
   }
-  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCarrito {
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCart {
     height: 20px;
+  }
+  body div .fixedTop .headerBox .headerBox_right .headerBox_right-img-container .imgCartCounter {
+    width: 11px;
+    height: 36%;
+    font-weight: 700;
+    font-size: 0.52rem;
   }
   body div .fixedTop .headerBox .headerBox_right p {
     font-size: 0.6rem;

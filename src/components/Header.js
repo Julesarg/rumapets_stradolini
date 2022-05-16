@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import CartWidget from "./CartWidget";
 
 const Header = () =>{
     return (
@@ -9,13 +10,7 @@ const Header = () =>{
           </div>
           <div className="headerBox_right">
             <p>descansos</p>
-            <div className="headerBox_right-img-container">
-              <img
-                src="./imgs/cart/cart.png"
-                alt="carrito"
-                className="imgCarrito"
-              />
-            </div>
+            <CartWidget/>
           </div>
         </section>
     <Navbar/>    

@@ -1,11 +1,14 @@
 import NavbarToggle from "./NavbarToggle";
 
 const Navbar = () => {
-
   return (
     <section className="navegacion">
       <nav className="nav">
-        <button onClick={NavbarToggle()} className="toggle" aria-label="open Menu">
+        <button
+          onClick={() => NavbarToggle()}
+          className="toggle"
+          aria-label="open Menu"
+        >
           <img src="./imgs/general/hamburgerMenu.png" alt="hamburgerMenu" />
         </button>
         <div className="container-logo-reduced">
@@ -22,12 +25,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="#" className="textoNavBar">
+            <a href="index.html" className="textoNavBar">
               PRODUCTOS
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="#" className="textoNavBar">
+            <a href="index.html" className="textoNavBar">
               MATERIALES
             </a>
           </li>
@@ -39,17 +42,17 @@ const Navbar = () => {
             />
           </li>
           <li className="nav-menu-item">
-            <a href="#" className="textoNavBar">
+            <a href="index.html" className="textoNavBar">
               PAGOS Y ENVIOS
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="#" className="textoNavBar">
+            <a href="index.html" className="textoNavBar">
               CLIENTES
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="#" className="textoNavBar">
+            <a href="index.html" className="textoNavBar">
               NOSOTROS
             </a>
           </li>
