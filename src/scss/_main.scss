@@ -106,7 +106,7 @@ body div {
           padding-left: 0px;
           border-bottom-style: solid;
           border-bottom-width: 8px;
-          border-bottom-color: rgba(255,255,255, 0.9);
+          border-bottom-color: rgba(255, 255, 255, 0.9);
           .nav-menu-item {
             @include display(flex, row);
             justify-content: center;
@@ -141,7 +141,7 @@ body div {
       }
     }
   }
-  .ItemListContainer{
+  .ItemListContainer {
     display: flex;
     text-align: center;
     margin-top: 10px;

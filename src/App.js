@@ -7,7 +7,7 @@ const App = () => {
   return (
     <React.Fragment>
     <Header />
-    <ItemListContainer />
+    <ItemListContainer greeting = "Hola Mundo" />
     </React.Fragment>
   )
 };
