@@ -1,17 +1,15 @@
 import "./css/App.css";
-import Header from "./components/Header";
 import React from "react";
-import ItemListContainer from "./components/ItemListContainer";
-import ItemCount from "./components/ItemCount";
+import Header from "./components/Header";
+import ItemListContainer from "./containers/ItemListContainer";
 
 const App = () => {
   return (
     <React.Fragment>
-    <Header />
-    <ItemListContainer greeting = "Hola Mundo" />
-    <ItemCount />
+      <Header />
+      <ItemListContainer />
     </React.Fragment>
-  )
+  );
 };
 
 export default App;
