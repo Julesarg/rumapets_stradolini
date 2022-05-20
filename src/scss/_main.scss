@@ -8,6 +8,7 @@ body div {
   height: 100%;
   .fixedTop {
     position: fixed;
+    z-index: 9999;
     width: 100%;
     height: 60px;
     top: 0;
@@ -160,6 +161,8 @@ body div {
       align-items: center;
       .item-list-container_item_img {
         display: flex;
+        position: relative;
+        z-index: 1;
         width: 100%;
         height: auto;
         border-top-left-radius: 10px;
@@ -167,9 +170,51 @@ body div {
         box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
         transition-duration: 0.2s;
         img {
+          display: block;
           width: 100%;
           height: auto;
         }
+      }
+      .item-list-container_item_img_overlay {
+        position: absolute;
+        @include display(flex, column);
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 0.5s ease;
+        .item-list-container_item_img_overlay_textBox {
+          @include sizes(100%, 100%);
+          @include display(flex, column);
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          white-space: nowrap;
+          p {
+            color: white;
+            font-size: 20px;
+          }
+          button {
+            background-color: rgba(0, 99, 180, 0.6);
+            border-style: none;
+            width: 100%;
+            height: 40px;
+            margin-top: 5px;
+            a {
+              text-decoration: none;
+              color: white;
+              font-size: 0.9rem;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+      .item-list-container_item_img:hover
+        .item-list-container_item_img_overlay {
+        width: 100%;
       }
       .item-list-container_item_title {
         display: flex;

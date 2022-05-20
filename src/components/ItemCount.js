@@ -1,12 +1,13 @@
 import { useState } from "react";
 
-const ItemCount = () => {
-  const [stock, setStock] = useState(1);
+const ItemCount = (props) => {
+  const [stock2, setStock] = useState(props.initial);
+
   const addToCart = () => {
-    if (stock < 10) setStock(stock + 1);
+    if (stock2 < props.stock) setStock(stock2 + 1);
   };
   const removeFromCart = () => {
-    if (stock > 1) setStock(stock - 1);
+    if (stock2 > 1) setStock(stock2 - 1);
   };
 
   return (
@@ -16,7 +17,7 @@ const ItemCount = () => {
           <p className="control-container-button-text">+</p>
         </button>
         <div className="control-container-number">
-          <p>{stock}</p>
+          <p>{stock2}</p>
         </div>
         <button onClick={removeFromCart} className="control-container-button">
           <p className="control-container-button-text">-</p>
