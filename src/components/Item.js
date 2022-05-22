@@ -2,6 +2,11 @@ import ItemCount from "./ItemCount";
 const descuentoGeneral = 0.9;
 
 const Item = (props) => {
+
+  const onAdd = (stock2) =>{
+    alert(`Agregaste ` + stock2 + ` items al carrito`);
+  }
+
   return (
     <>
       <div className="item-list-container_item_prices">
@@ -14,7 +19,7 @@ const Item = (props) => {
           <p>${props.price * descuentoGeneral}</p>
         </div>
       </div>
-      <ItemCount stock={props.stock} initial={1} />
+      <ItemCount stock={props.stock} initial={1} onAdd = {onAdd}/>
     </>
   );
 };

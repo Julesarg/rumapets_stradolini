@@ -23,7 +23,7 @@ const ItemCount = (props) => {
           <p className="control-container-button-text">-</p>
         </button>
       </div>
-      <div className="control-container-purchase">
+      <div onClick={()=>{props.onAdd(stock2)}} className="control-container-purchase">
         <p className="control-container-purchase-text">ADD TO CART</p>
       </div>
     </div>
