@@ -9,7 +9,7 @@ const Item = (props) => {
 
   return (
     <React.Fragment>
-      <div className="item-list-container_item">
+      <div className="item-list-container_item animate__animated animate__fadeIn">
         <div className="item-list-container_item_title">
           <h3>{props.modelo}</h3>
         </div>

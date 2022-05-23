@@ -175,6 +175,83 @@ body div .item-list-container {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
 }
+body div .item-list-container .container-spinner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
+}
+body div .item-list-container .container-spinner .cssload-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body div .item-list-container .container-spinner p {
+  color: #d85b8c;
+}
+body div .item-list-container .container-spinner .cssload-zenith {
+  width: 49px;
+  height: 49px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 3px 3px 1px rgb(216, 91, 140);
+  animation: cssload-spin 1230ms infinite linear;
+  -o-animation: cssload-spin 1230ms infinite linear;
+  -ms-animation: cssload-spin 1230ms infinite linear;
+  -webkit-animation: cssload-spin 1230ms infinite linear;
+  -moz-animation: cssload-spin 1230ms infinite linear;
+}
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes cssload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-spin {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes cssload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+body div .item-list-container .animate__animated {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+body div .item-list-container .animate__animated img {
+  width: 30%;
+  height: auto;
+}
 body div .item-list-container .item-list-container_item {
   width: 250px;
   height: fit-content;

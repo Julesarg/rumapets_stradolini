@@ -156,6 +156,79 @@ body div {
     grid-gap: 50px;
     grid-auto-rows: auto;
     grid-auto-flow: dense;
+    
+    .container-spinner {
+      @include display(flex, column);
+      @include sizes(100%, 600px);
+      justify-content: center;
+      align-items: center;
+      .cssload-container {
+        @include display(flex, column);
+        @include sizes(100%, 100%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        color: #d85b8c;
+      }
+      .cssload-zenith {
+        width: 49px;
+        height: 49px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 3px 3px 1px rgb(216, 91, 140);
+        animation: cssload-spin 1230ms infinite linear;
+        -o-animation: cssload-spin 1230ms infinite linear;
+        -ms-animation: cssload-spin 1230ms infinite linear;
+        -webkit-animation: cssload-spin 1230ms infinite linear;
+        -moz-animation: cssload-spin 1230ms infinite linear;
+      }
+      @keyframes cssload-spin {
+        100% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-o-keyframes cssload-spin {
+        100% {
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-ms-keyframes cssload-spin {
+        100% {
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes cssload-spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes cssload-spin {
+        100% {
+          -moz-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .animate__animated {
+      @include display(flex, row);
+      @include sizes(75%, 75%);
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30%;
+        height: auto;
+      }
+    }
+
     .item-list-container_item {
       @include sizes(250px, fit-content);
       @include display(flex, column);
