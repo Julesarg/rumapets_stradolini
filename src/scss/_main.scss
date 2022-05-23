@@ -3,7 +3,6 @@
 body div {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: 100%;
   .fixedTop {
@@ -145,10 +144,13 @@ body div {
     }
   }
   .item-list-container {
+    align-items: center;
     text-align: center;
     justify-items: center;
     width: 85%;
     margin-top: 30px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 50px;
@@ -167,7 +169,7 @@ body div {
         height: auto;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
         transition-duration: 0.2s;
         img {
           display: block;
@@ -181,7 +183,7 @@ body div {
         bottom: 0;
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(0, 0, 0, 0.8);
         overflow: hidden;
         width: 0;
         height: 100%;
@@ -189,26 +191,79 @@ body div {
         .item-list-container_item_img_overlay_textBox {
           @include sizes(100%, 100%);
           @include display(flex, column);
-          justify-content: center;
-          align-items: center;
+          align-items: right;
           position: absolute;
           white-space: nowrap;
-          p {
-            color: white;
-            font-size: 20px;
+          color: white;
+          .item-list-container_item_img_overlay_textBox_type {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 33%;
+            height: auto;
+            border-bottom-right-radius: 15px;
+            background-color: rgba(0, 158, 255, 0.6);
+            p {
+              font-size: 0.95rem;
+              padding: 2px 0px 5px 0px;
+            }
+          }
+          .item-list-container_item_img_overlay_textBox_properties {
+            @include display(flex, column);
+            @include sizes(100%, 45%);
+            justify-content: center;
+            align-items: center;
+          }
+          .item-list-container_item_img_overlay_textBox_prices {
+            @include display(flex, column);
+            background-color: rgba(0, 102, 255, 0.6);
+            justify-content: space-between;
+            width: 100%;
+            height: auto;
+            font-weight: 500;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            padding: 2%;
+            background-color: rgba(0, 0, 0, 0.4);
+            .item-list-container_item_img_overlay_textBox_prices_list {
+              @include display(flex, row);
+              justify-content: space-between;
+              p {
+                font-size: 0.8rem;
+              }
+            }
+            .item-list-container_item_img_overlay_textBox_prices_cash {
+              @include display(flex, row);
+              justify-content: space-between;
+              align-items: center;
+              p {
+                font-size: 0.9rem;
+              }
+            }
           }
           button {
-            background-color: rgba(0, 99, 180, 0.6);
+            align-self: flex-end;
+            background-color: rgba(0, 158, 255, 0.6);
             border-style: none;
-            width: 100%;
-            height: 40px;
-            margin-top: 5px;
+            width: 50%;
+            height: auto;
+            margin-top: 15px;
+            margin-right: 10%;
+            padding: 5px;
+            border-radius: 15px;
+            transition: all 0.3s ease-in-out;
             a {
               text-decoration: none;
               color: white;
               font-size: 0.9rem;
               font-weight: 700;
             }
+          }
+          button:hover {
+            width: 100%;
+            background-color: rgba(255, 0, 64, 0.452);
+            margin-right: 0;
+            border-radius: 0;
           }
         }
       }
@@ -220,33 +275,13 @@ body div {
         display: flex;
         align-items: flex-start;
         width: 100%;
-        font-size: 1.2rem;
-        color: #d9737f;
+        font-size: 0.9rem;
+        color: #ec8692;
         text-align: left;
         margin-bottom: 5px;
         border-bottom-style: solid;
         border-bottom-width: 2px;
         border-bottom-color: #e09ba3;
-      }
-      .item-list-container_item_prices {
-        @include display(flex, column);
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        font-weight: 600;
-        margin-bottom: 10px;
-        .item-list-container_item_prices_listPrice {
-          @include display(flex, row);
-          justify-content: space-between;
-          color: darkgrey;
-        }
-        .item-list-container_item_prices_cashPrice {
-          @include display(flex, row);
-          justify-content: space-between;
-          align-items: center;
-          color: grey;
-          font-size: 1rem;
-        }
       }
       .control-container {
         @include sizes(250px, fit-content);
@@ -254,12 +289,13 @@ body div {
         justify-content: space-between;
         align-items: center;
         border-radius: 20px;
-        background-color: white;
-        box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
+        // background-color: white;
+        // box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
         font-weight: 600;
         color: #fa576a;
         padding-left: 20px;
         padding-right: 20px;
+        margin-top: 5px;
         .control-container-img {
           width: 100px;
           height: 400px;
