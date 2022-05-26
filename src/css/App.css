@@ -175,6 +175,175 @@ body div .item-list-container {
   grid-auto-rows: auto;
   grid-auto-flow: dense;
 }
+body div .item-list-container .item-detail-container {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_left {
+  width: 40%;
+  height: fit-content;
+}
+body div .item-list-container .item-detail-container .item-detail-container_left img {
+  width: auto;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5%;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle {
+  width: 50%;
+  height: 10%;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle img {
+  width: 70%;
+  height: auto;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties {
+  width: 100%;
+  height: 40%;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  margin-top: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties p {
+  font-size: 0.9rem;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock {
+  width: 75%;
+  height: 5%;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 10px;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.3);
+  border-top-width: 2px;
+  font-size: 0.8rem;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock a {
+  color: red;
+  font-weight: 700;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  border-top-style: solid;
+  border-top-color: rgba(0, 0, 0, 0.4);
+  border-top-width: 2px;
+  padding-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-cash {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount {
+  width: 60%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 10%;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button {
+  width: 30px;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border-style: none;
+  background-color: #002aff;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button p {
+  color: white;
+  font-size: 1.2rem;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number {
+  width: 20%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number p {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #002aff;
+  border-radius: 10px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-stock {
+  width: 100%;
+  height: 3%;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-advice {
+  width: 100%;
+  height: 10%;
+  margin-top: 50px;
+}
+body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-advice p {
+  font-size: 0.7rem;
+}
 body div .item-list-container .container-spinner {
   display: flex;
   flex-direction: column;

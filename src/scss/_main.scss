@@ -156,7 +156,151 @@ body div {
     grid-gap: 50px;
     grid-auto-rows: auto;
     grid-auto-flow: dense;
-    
+    .item-detail-container {
+      @include display(flex, row);
+      @include sizes(800px, 700px);
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      .item-detail-container_left {
+        @include sizes(40%, fit-content);
+        img {
+          @include sizes(auto, 100%);
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+      }
+      .item-detail-container_right {
+        @include sizes(60%, 100%);
+        @include display(flex, column);
+        padding: 2.5%;
+        .item-detail-container_right-imgTitle {
+          @include sizes(50%, 10%);
+          img {
+            @include sizes(70%, auto);
+          }
+        }
+        .item-detail-container_right-properties {
+          @include sizes(100%, 40%);
+          align-items: flex-start;
+          justify-content: center;
+          text-align: left;
+          margin-top: 10px;
+          h4 {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+          }
+          p {
+            font-size: 0.9rem;
+          }
+        }
+        .item-detail-container_right-colorStock {
+          @include sizes(75%, 5%);
+          justify-content: center;
+          align-items: flex-start;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-top: 10px;
+          border-top-style: solid;
+          border-top-color: rgba(0, 0, 0, 0.3);
+          border-top-width: 2px;
+          font-size: 0.8rem;
+          a {
+            color: red;
+            font-weight: 700;
+          }
+        }
+        .item-detail-container_right-prices {
+          @include sizes(100%, 10%);
+          @include display(flex, column);
+          border-top-style: solid;
+          border-top-color: rgba(0, 0, 0, 0.4);
+          border-top-width: 2px;
+          padding-top: 10px;
+          font-size: 1.1rem;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.7);
+          .item-detail-container_right-prices-list {
+            @include sizes(100%, auto);
+            @include display(flex, row);
+            justify-content: space-between;
+          }
+          .item-detail-container_right-prices-cash {
+            @include sizes(100%, auto);
+            @include display(flex, row);
+            justify-content: space-between;
+          }
+        }
+        .item-detail-container_right-addButton {
+          @include sizes(100%, 6%);
+          @include display(flex, row);
+          margin-top: 10px;
+          .control-container {
+            @include sizes(100%, auto);
+            @include display(flex, row);
+            justify-content: flex-end;
+            .control-container-amount {
+              @include sizes(60%, auto);
+              @include display(flex, row);
+              justify-content: flex-end;
+              margin-right: 10%;
+              .control-container-button {
+                @include sizes(30px, 80%);
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border-style: none;
+                background-color: #002aff;
+                p {
+                  color: white;
+                  font-size: 1.2rem;
+                }
+              }
+              .control-container-number {
+                @include sizes(20%, 80%);
+                justify-content: center;
+                align-items: center;
+                p {
+                  font-size: 1.1rem;
+                  font-weight: 500;
+                }
+              }
+            }
+            .control-container-purchase {
+              @include sizes(40%, 80%);
+              @include display(flex, row);
+              justify-content: center;
+              align-items: center;
+              background-color: #002aff;
+              border-radius: 10px;
+
+              .control-container-purchase-text {
+                color: white;
+                font-size: 0.8rem;
+                font-weight: 700;
+              }
+            }
+          }
+        }
+        .item-detail-container_right-stock {
+          @include sizes(100%, 3%);
+          justify-content: center;
+          align-items: flex-end;
+          margin-top: 10px;
+          font-weight: 700;
+          font-size: 0.8rem;
+        }
+        .item-detail-container_right-advice {
+          @include sizes(100%, 10%);
+          margin-top: 50px;
+          p {
+            font-size: 0.7rem;
+          }
+        }
+      }
+    }
+
+    //listado
+
     .container-spinner {
       @include display(flex, column);
       @include sizes(100%, 600px);
