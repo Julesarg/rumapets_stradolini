@@ -1,4 +1,5 @@
 import NavbarToggle from "./NavbarToggle";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
@@ -20,39 +21,33 @@ const Navbar = () => {
         </div>
         <ul className="nav-menu">
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               INICIO
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               PRODUCTOS
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               MATERIALES
             </a>
           </li>
-          <li className="nav-menu-img">
-            <img
-              src="./imgs/general/logo.png"
-              alt="logo"
-              className="logoHeader"
-            />
-          </li>
+          <Logo />
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               PAGOS Y ENVIOS
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               CLIENTES
             </a>
           </li>
           <li className="nav-menu-item">
-            <a href="index.html" className="textoNavBar">
+            <a href="/#" className="textoNavBar">
               NOSOTROS
             </a>
           </li>

@@ -1,14 +1,17 @@
 import React from "react";
-import ItemCount from "./ItemCount";
+import {Link} from 'react-router-dom';
+import ItemCount from "../ItemCount";
 const descuentoGeneral = 0.9;
 
-const Item = (props) => {
+
+const Item = (props,id) => {
   const onAdd = (stock2) => {
     alert(`Agregaste ` + stock2 + ` items al carrito`);
   };
 
   return (
     <React.Fragment>
+      
       <div className="item-list-container_item animate__animated animate__fadeIn">
         <div className="item-list-container_item_title">
           <h3>{props.modelo}</h3>
@@ -41,9 +44,9 @@ const Item = (props) => {
                 </div>
               </div>
               <button>
-                <a href={props.link} target="_blank">
-                  Ver Detalle
-                </a>
+              <Link to={`/item/${Number(props.id)}`}>
+                  Ver Detalle             
+              </Link>
               </button>
             </div>
           </div>

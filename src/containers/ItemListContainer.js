@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import ItemList from "../components/ItemList";
+import ItemList from "../components/itemList/ItemList";
 import arrayFetch from "../utilities/arrayFetch";
-import Wrapper from "../components/Wrapper";
 const { products } = require(`../utilities/products`);
 
 const ItemListContainer = () => {
@@ -15,7 +14,6 @@ const ItemListContainer = () => {
 
   return (
     <>
-      <Wrapper></Wrapper>
       <ItemList items={datos} />
     </>
   );

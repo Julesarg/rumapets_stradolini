@@ -1,5 +1,6 @@
 import React from "react";
-import ItemCount from "./ItemCount";
+import ItemCount from "../ItemCount";
+
 const descuentoGeneral = 0.9;
 
 const Item = (props) => {

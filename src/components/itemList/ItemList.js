@@ -1,13 +1,16 @@
 import React from "react";
 import Item from "./Item";
 
+
 const ItemList = (props) => {
   return (
     <div className="item-list-container animate__animated animate__fadeIn">
+      
       {props.items.length > 0 ? (
         props.items.map((item) => (
           <Item
             key={item.id}
+            id={item.id}
             img={item.img}
             imgDetai={item.imgDetai}
             marca={item.marca}
