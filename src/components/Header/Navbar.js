@@ -1,5 +1,7 @@
+import React from "react";
 import NavbarToggle from "./NavbarToggle";
 import Logo from "./Logo";
+import {Link} from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -26,9 +28,11 @@ const Navbar = () => {
             </a>
           </li>
           <li className="nav-menu-item">
+          <Link to='./'>
             <a href="/#" className="textoNavBar">
               PRODUCTOS
             </a>
+          </Link>
           </li>
           <li className="nav-menu-item">
             <a href="/#" className="textoNavBar">

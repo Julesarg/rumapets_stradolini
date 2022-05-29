@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     arrayFetch(
-      1,
+      0,
       products.find((item) => item.id === Number(id))
     )
       .then((result) => setDato(result))
@@ -18,9 +18,7 @@ const ItemDetailContainer = () => {
   }, []);
 
   return (
-    <>
       <ItemDetail item={dato} />
-    </>
   );
 };
 

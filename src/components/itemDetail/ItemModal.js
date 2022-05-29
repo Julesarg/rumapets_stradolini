@@ -7,15 +7,15 @@ const Item = (props) => {
   const onAdd = (stock2) => {
     alert(`Agregaste ` + stock2 + ` items al carrito`);
   };
-
   return (
+    <div className="item-list-container animate__animated animate__fadeIn">
     <div className="item-detail-container">
       <div className="item-detail-container_left">
-        <img src={props.imgDetail} />
+        <img src={props.imgDetail} alt={props.modelo} />
       </div>
       <div className="item-detail-container_right">
         <div className="item-detail-container_right-imgTitle">
-          <img src={props.model_image} />
+          <img src={props.model_image} alt="model Icon logo" />
         </div>
         <div className="item-detail-container_right-properties">
           <h4>Propiedades y caracteristicas</h4>
@@ -23,7 +23,7 @@ const Item = (props) => {
         </div>
         <div className="item-detail-container_right-colorStock">
           <p>
-            Consultar disponibilidad de colores <a>AQUI</a>
+            Consultar disponibilidad de colores <a href="/#">AQUI</a>
           </p>
         </div>
         <div className="item-detail-container_right-prices">
@@ -46,6 +46,7 @@ const Item = (props) => {
           <p>{props.advice}</p>
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -143,6 +143,36 @@ body div {
       }
     }
   }
+  .categories-container{
+    @include display(flex, row);
+      width: 100%;
+      margin-top: 30px;
+      justify-content: center;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: rgba(216, 91, 140, 0.5);
+      a{
+        text-decoration: none;
+        width: 5%;
+        display: flex;
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: white;
+        .categories-container_small, .categories-container_medium, .categories-container_large{
+        justify-content: center;
+        align-items: center;
+        background:  #d85b8c;
+        padding: 5px;
+        transition: .3s all ease-in-out;
+        }
+      .categories-container_small:hover, .categories-container_medium:hover, .categories-container_large:hover{
+        background:  #c23f71;        
+      }  
+    }
+  }
+
+
+
   .item-list-container {
     align-items: center;
     text-align: center;
