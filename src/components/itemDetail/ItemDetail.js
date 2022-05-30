@@ -5,6 +5,8 @@ import Loader from "../../utilities/Loader";
 const ItemDetail = (props) => {
   return (
     <>
+    <div className="item-detail-general">
+      {props.item.img ?
       <ItemModal
         key={props.item.id}
         id={props.item.id}
@@ -27,6 +29,10 @@ const ItemDetail = (props) => {
         stock={props.item.stock}
         advice={props.item.advice}
       />
+      :
+      <Loader />
+}
+      </div>
     </>
   );
 };

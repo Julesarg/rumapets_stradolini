@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Categories = () =>{
     return (
         <>
-        <div className="categories-container">
+        <div className="categories-container animate__animated animate__fadeInDown">
             <Link to='/category/Small'>
             <div className="categories-container_small">
                 <p>Chicos</p>

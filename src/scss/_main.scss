@@ -143,194 +143,13 @@ body div {
       }
     }
   }
-  .categories-container{
+  .item-detail-general {
+    @include sizes(100%, 100%);
     @include display(flex, row);
-      width: 100%;
-      margin-top: 30px;
-      justify-content: center;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      border-bottom-color: rgba(216, 91, 140, 0.5);
-      a{
-        text-decoration: none;
-        width: 5%;
-        display: flex;
-        font-size: 0.9rem;
-        font-weight: 500;
-        color: white;
-        .categories-container_small, .categories-container_medium, .categories-container_large{
-        justify-content: center;
-        align-items: center;
-        background:  #d85b8c;
-        padding: 5px;
-        transition: .3s all ease-in-out;
-        }
-      .categories-container_small:hover, .categories-container_medium:hover, .categories-container_large:hover{
-        background:  #c23f71;        
-      }  
-    }
-  }
-
-
-
-  .item-list-container {
+    margin-top: 150px;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    justify-items: center;
-    width: 85%;
-    margin-top: 30px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 50px;
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    .item-detail-container {
-      @include display(flex, row);
-      @include sizes(800px, 700px);
-      background-color: rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
-      .item-detail-container_left {
-        @include sizes(40%, fit-content);
-        img {
-          @include sizes(auto, 100%);
-          border-top-left-radius: 10px;
-          border-bottom-left-radius: 10px;
-        }
-      }
-      .item-detail-container_right {
-        @include sizes(60%, 100%);
-        @include display(flex, column);
-        padding: 2.5%;
-        .item-detail-container_right-imgTitle {
-          @include sizes(50%, 10%);
-          img {
-            @include sizes(70%, auto);
-          }
-        }
-        .item-detail-container_right-properties {
-          @include sizes(100%, 40%);
-          align-items: flex-start;
-          justify-content: center;
-          text-align: left;
-          margin-top: 10px;
-          h4 {
-            font-size: 0.9rem;
-            margin-bottom: 10px;
-          }
-          p {
-            font-size: 0.9rem;
-          }
-        }
-        .item-detail-container_right-colorStock {
-          @include sizes(75%, 5%);
-          justify-content: center;
-          align-items: flex-start;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          margin-top: 10px;
-          border-top-style: solid;
-          border-top-color: rgba(0, 0, 0, 0.3);
-          border-top-width: 2px;
-          font-size: 0.8rem;
-          a {
-            color: red;
-            font-weight: 700;
-          }
-        }
-        .item-detail-container_right-prices {
-          @include sizes(100%, 10%);
-          @include display(flex, column);
-          border-top-style: solid;
-          border-top-color: rgba(0, 0, 0, 0.4);
-          border-top-width: 2px;
-          padding-top: 10px;
-          font-size: 1.1rem;
-          font-weight: 500;
-          color: rgba(0, 0, 0, 0.7);
-          .item-detail-container_right-prices-list {
-            @include sizes(100%, auto);
-            @include display(flex, row);
-            justify-content: space-between;
-          }
-          .item-detail-container_right-prices-cash {
-            @include sizes(100%, auto);
-            @include display(flex, row);
-            justify-content: space-between;
-          }
-        }
-        .item-detail-container_right-addButton {
-          @include sizes(100%, 6%);
-          @include display(flex, row);
-          margin-top: 10px;
-          .control-container {
-            @include sizes(100%, auto);
-            @include display(flex, row);
-            justify-content: flex-end;
-            .control-container-amount {
-              @include sizes(60%, auto);
-              @include display(flex, row);
-              justify-content: flex-end;
-              margin-right: 10%;
-              .control-container-button {
-                @include sizes(30px, 80%);
-                justify-content: center;
-                align-items: center;
-                border-radius: 100%;
-                border-style: none;
-                background-color: #002aff;
-                p {
-                  color: white;
-                  font-size: 1.2rem;
-                }
-              }
-              .control-container-number {
-                @include sizes(20%, 80%);
-                justify-content: center;
-                align-items: center;
-                p {
-                  font-size: 1.1rem;
-                  font-weight: 500;
-                }
-              }
-            }
-            .control-container-purchase {
-              @include sizes(40%, 80%);
-              @include display(flex, row);
-              justify-content: center;
-              align-items: center;
-              background-color: #002aff;
-              border-radius: 10px;
-
-              .control-container-purchase-text {
-                color: white;
-                font-size: 0.8rem;
-                font-weight: 700;
-              }
-            }
-          }
-        }
-        .item-detail-container_right-stock {
-          @include sizes(100%, 3%);
-          justify-content: center;
-          align-items: flex-end;
-          margin-top: 10px;
-          font-weight: 700;
-          font-size: 0.8rem;
-        }
-        .item-detail-container_right-advice {
-          @include sizes(100%, 10%);
-          margin-top: 50px;
-          p {
-            font-size: 0.7rem;
-          }
-        }
-      }
-    }
-
-    //listado
-
+    //loader item
     .container-spinner {
       @include display(flex, column);
       @include sizes(100%, 600px);
@@ -402,7 +221,273 @@ body div {
         height: auto;
       }
     }
+    //detalle item
+    .item-list-container-bis {
+      .item-detail-container {
+        @include display(flex, row);
+        @include sizes(800px, 700px);
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        .item-detail-container_left {
+          @include sizes(40%, fit-content);
+          img {
+            @include sizes(auto, 100%);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+        }
+        .item-detail-container_right {
+          @include sizes(60%, 100%);
+          @include display(flex, column);
+          padding: 2.5%;
+          .item-detail-container_right-imgTitle {
+            @include sizes(50%, 10%);
+            img {
+              @include sizes(70%, auto);
+            }
+          }
+          .item-detail-container_right-properties {
+            @include sizes(100%, 40%);
+            align-items: flex-start;
+            justify-content: center;
+            text-align: left;
+            margin-top: 10px;
+            h4 {
+              font-size: 0.9rem;
+              margin-bottom: 10px;
+            }
+            p {
+              font-size: 0.9rem;
+            }
+          }
+          .item-detail-container_right-colorStock {
+            @include sizes(75%, 5%);
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 10px;
+            border-top-style: solid;
+            border-top-color: rgba(0, 0, 0, 0.3);
+            border-top-width: 2px;
+            font-size: 0.8rem;
+            a {
+              color: red;
+              font-weight: 700;
+            }
+          }
+          .item-detail-container_right-prices {
+            @include sizes(100%, 10%);
+            @include display(flex, column);
+            border-top-style: solid;
+            border-top-color: rgba(0, 0, 0, 0.4);
+            border-top-width: 2px;
+            padding-top: 10px;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.7);
+            .item-detail-container_right-prices-list {
+              @include sizes(100%, auto);
+              @include display(flex, row);
+              justify-content: space-between;
+            }
+            .item-detail-container_right-prices-cash {
+              @include sizes(100%, auto);
+              @include display(flex, row);
+              justify-content: space-between;
+            }
+          }
+          .item-detail-container_right-addButton {
+            @include sizes(100%, 6%);
+            @include display(flex, row);
+            margin-top: 10px;
+            .control-container {
+              @include sizes(100%, auto);
+              @include display(flex, row);
+              justify-content: flex-end;
+              .control-container-amount {
+                @include sizes(60%, auto);
+                @include display(flex, row);
+                justify-content: flex-end;
+                margin-right: 10%;
+                .control-container-button {
+                  @include sizes(30px, 80%);
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 100%;
+                  border-style: none;
+                  background-color: #002aff;
+                  p {
+                    color: white;
+                    font-size: 1.2rem;
+                  }
+                }
+                .control-container-number {
+                  @include sizes(20%, 80%);
+                  justify-content: center;
+                  align-items: center;
+                  p {
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                  }
+                }
+              }
+              .control-container-purchase {
+                @include sizes(40%, 80%);
+                @include display(flex, row);
+                justify-content: center;
+                align-items: center;
+                background-color: #002aff;
+                border-radius: 10px;
 
+                .control-container-purchase-text {
+                  color: white;
+                  font-size: 0.8rem;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+          .item-detail-container_right-stock {
+            @include sizes(100%, 3%);
+            justify-content: center;
+            align-items: flex-end;
+            margin-top: 10px;
+            font-weight: 700;
+            font-size: 0.8rem;
+          }
+          .item-detail-container_right-advice {
+            @include sizes(100%, 10%);
+            margin-top: 50px;
+            p {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  //categorias
+  .categories-container {
+    @include display(flex, row);
+    width: 100%;
+    margin-top: 120px;
+    justify-content: center;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(216, 91, 140, 0.5);
+    transition: 0.3s ease-in-out;
+    a {
+      text-decoration: none;
+      width: 5%;
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: white;
+      .categories-container_small,
+      .categories-container_medium,
+      .categories-container_large {
+        justify-content: center;
+        align-items: center;
+        background: #d85b8c;
+        padding: 5px;
+        transition: 0.3s all ease-in-out;
+      }
+      .categories-container_small:hover,
+      .categories-container_medium:hover,
+      .categories-container_large:hover {
+        background: #c23f71;
+      }
+    }
+  }
+  //listado general
+  .item-list-container {
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    width: 85%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 50px;
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    //spinner loader
+    .container-spinner {
+      @include display(flex, column);
+      @include sizes(100%, 600px);
+      justify-content: center;
+      align-items: center;
+      .cssload-container {
+        @include display(flex, column);
+        @include sizes(100%, 100%);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      p {
+        color: #d85b8c;
+      }
+      .cssload-zenith {
+        width: 49px;
+        height: 49px;
+        margin: 0 auto;
+        border-radius: 50%;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        box-shadow: 3px 3px 1px rgb(216, 91, 140);
+        animation: cssload-spin 1230ms infinite linear;
+        -o-animation: cssload-spin 1230ms infinite linear;
+        -ms-animation: cssload-spin 1230ms infinite linear;
+        -webkit-animation: cssload-spin 1230ms infinite linear;
+        -moz-animation: cssload-spin 1230ms infinite linear;
+      }
+      @keyframes cssload-spin {
+        100% {
+          transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-o-keyframes cssload-spin {
+        100% {
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-ms-keyframes cssload-spin {
+        100% {
+          -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes cssload-spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @-moz-keyframes cssload-spin {
+        100% {
+          -moz-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+    }
+    .animate__animated {
+      @include display(flex, row);
+      @include sizes(75%, 75%);
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30%;
+        height: auto;
+      }
+    }
+    //listado general y categories
     .item-list-container_item {
       @include sizes(250px, fit-content);
       @include display(flex, column);
@@ -536,8 +621,6 @@ body div {
         justify-content: space-between;
         align-items: center;
         border-radius: 20px;
-        // background-color: white;
-        // box-shadow: 1px 1px 10px rgb(0 0 0 / 20%);
         font-weight: 600;
         color: #fa576a;
         padding-left: 20px;

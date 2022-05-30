@@ -161,49 +161,93 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   position: relative;
   top: 3px;
 }
-body div .categories-container {
+body div .item-detail-general {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  width: 100%;
-  margin-top: 30px;
-  justify-content: center;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-color: rgba(216, 91, 140, 0.5);
-}
-body div .categories-container a {
-  text-decoration: none;
-  width: 5%;
-  display: flex;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: white;
-}
-body div .categories-container a .categories-container_small, body div .categories-container a .categories-container_medium, body div .categories-container a .categories-container_large {
+  margin-top: 150px;
   justify-content: center;
   align-items: center;
-  background: #d85b8c;
-  padding: 5px;
-  transition: 0.3s all ease-in-out;
 }
-body div .categories-container a .categories-container_small:hover, body div .categories-container a .categories-container_medium:hover, body div .categories-container a .categories-container_large:hover {
-  background: #c23f71;
+body div .item-detail-general .container-spinner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
 }
-body div .item-list-container {
+body div .item-detail-general .container-spinner .cssload-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  justify-items: center;
-  width: 85%;
-  margin-top: 30px;
-  margin-left: 7.5%;
-  margin-right: 7.5%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 50px;
-  grid-auto-rows: auto;
-  grid-auto-flow: dense;
 }
-body div .item-list-container .item-detail-container {
+body div .item-detail-general .container-spinner p {
+  color: #d85b8c;
+}
+body div .item-detail-general .container-spinner .cssload-zenith {
+  width: 49px;
+  height: 49px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  box-shadow: 3px 3px 1px rgb(216, 91, 140);
+  animation: cssload-spin 1230ms infinite linear;
+  -o-animation: cssload-spin 1230ms infinite linear;
+  -ms-animation: cssload-spin 1230ms infinite linear;
+  -webkit-animation: cssload-spin 1230ms infinite linear;
+  -moz-animation: cssload-spin 1230ms infinite linear;
+}
+@keyframes cssload-spin {
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes cssload-spin {
+  100% {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes cssload-spin {
+  100% {
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes cssload-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes cssload-spin {
+  100% {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+body div .item-detail-general .animate__animated {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  height: 75%;
+  justify-content: center;
+  align-items: center;
+}
+body div .item-detail-general .animate__animated img {
+  width: 30%;
+  height: auto;
+}
+body div .item-detail-general .item-list-container-bis .item-detail-container {
   display: flex;
   flex-direction: row;
   width: 800px;
@@ -211,32 +255,32 @@ body div .item-list-container .item-detail-container {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_left {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_left {
   width: 40%;
   height: fit-content;
 }
-body div .item-list-container .item-detail-container .item-detail-container_left img {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_left img {
   width: auto;
   height: 100%;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right {
   width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 2.5%;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle {
   width: 50%;
   height: 10%;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle img {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle img {
   width: 70%;
   height: auto;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties {
   width: 100%;
   height: 40%;
   align-items: flex-start;
@@ -244,14 +288,14 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   text-align: left;
   margin-top: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties h4 {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties h4 {
   font-size: 0.9rem;
   margin-bottom: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-properties p {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties p {
   font-size: 0.9rem;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock {
   width: 75%;
   height: 5%;
   justify-content: center;
@@ -264,11 +308,11 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   border-top-width: 2px;
   font-size: 0.8rem;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock a {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock a {
   color: red;
   font-weight: 700;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-prices {
   width: 100%;
   height: 10%;
   display: flex;
@@ -281,35 +325,35 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-list {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-list {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-cash {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-prices .item-detail-container_right-prices-cash {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton {
   width: 100%;
   height: 6%;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount {
   width: 60%;
   height: auto;
   display: flex;
@@ -317,7 +361,7 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   justify-content: flex-end;
   margin-right: 10%;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button {
   width: 30px;
   height: 80%;
   justify-content: center;
@@ -326,21 +370,21 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   border-style: none;
   background-color: #002aff;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button p {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button p {
   color: white;
   font-size: 1.2rem;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number {
   width: 20%;
   height: 80%;
   justify-content: center;
   align-items: center;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number p {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number p {
   font-size: 1.1rem;
   font-weight: 500;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase {
   width: 40%;
   height: 80%;
   display: flex;
@@ -350,12 +394,12 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   background-color: #002aff;
   border-radius: 10px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-stock {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-stock {
   width: 100%;
   height: 3%;
   justify-content: center;
@@ -364,13 +408,61 @@ body div .item-list-container .item-detail-container .item-detail-container_righ
   font-weight: 700;
   font-size: 0.8rem;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-advice {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-advice {
   width: 100%;
   height: 10%;
   margin-top: 50px;
 }
-body div .item-list-container .item-detail-container .item-detail-container_right .item-detail-container_right-advice p {
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-advice p {
   font-size: 0.7rem;
+}
+body div .categories-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 120px;
+  justify-content: center;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(216, 91, 140, 0.5);
+  transition: 0.3s ease-in-out;
+}
+body div .categories-container a {
+  text-decoration: none;
+  width: 5%;
+  display: flex;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
+}
+body div .categories-container a .categories-container_small,
+body div .categories-container a .categories-container_medium,
+body div .categories-container a .categories-container_large {
+  justify-content: center;
+  align-items: center;
+  background: #d85b8c;
+  padding: 5px;
+  transition: 0.3s all ease-in-out;
+}
+body div .categories-container a .categories-container_small:hover,
+body div .categories-container a .categories-container_medium:hover,
+body div .categories-container a .categories-container_large:hover {
+  background: #c23f71;
+}
+body div .item-list-container {
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  width: 85%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
 }
 body div .item-list-container .container-spinner {
   display: flex;
@@ -851,13 +943,11 @@ body div .item-list-container .item-list-container_item .control-container .cont
 body {
   font-family: "Inter", sans-serif;
   display: flex;
+  background-image: url(../../public/imgs/general/background.png);
   width: 100%;
+  height: 100%;
   flex-flow: column;
   font-size: 14px;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 main {

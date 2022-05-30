@@ -8,7 +8,7 @@ const Item = (props) => {
     alert(`Agregaste ` + stock2 + ` items al carrito`);
   };
   return (
-    <div className="item-list-container animate__animated animate__fadeIn">
+    <div className="item-list-container-bis animate__animated animate__fadeIn">
     <div className="item-detail-container">
       <div className="item-detail-container_left">
         <img src={props.imgDetail} alt={props.modelo} />

@@ -46,7 +46,7 @@ const Item = (props) => {
             </div>
           </div>
         </div>
-        <ItemCount stock={props.stock} initial={1} onAdd={onAdd} />
+        {/* <ItemCount stock={props.stock} initial={1} onAdd={onAdd} /> */}
       </div>
     </>
   );
