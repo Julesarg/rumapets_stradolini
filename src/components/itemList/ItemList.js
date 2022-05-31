@@ -18,6 +18,7 @@ const ItemList = (props) => {
               marca={item.marca}
               tipo={item.tipo}
               size={item.size}
+              category={item.category}
               modelo={item.modelo}
               model_image={item.model_image}
               price={item.price}

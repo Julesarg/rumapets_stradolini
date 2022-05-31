@@ -11,7 +11,7 @@ const ItemListContainer = () => {
   useEffect(() => {
     arrayFetch(
       2000,
-      id === undefined ? products : products.filter((item) => item.size === id))
+      id === undefined ? products : products.filter((item) => item.category === id))
       .then((result) => setDatos(result))
       .catch((err) => console.log(err))
     },

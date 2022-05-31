@@ -15,6 +15,7 @@ const ItemDetail = (props) => {
         marca={props.item.marca}
         tipo={props.item.tipo}
         size={props.item.size}
+        category={props.item.category}
         modelo={props.item.modelo}
         model_image={props.item.model_image}
         price={props.item.price}

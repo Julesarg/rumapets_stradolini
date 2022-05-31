@@ -8,7 +8,6 @@ const Item = (props) => {
   const onAdd = (stock2) => {
     alert(`Agregaste ` + stock2 + ` items al carrito`);
   };
-
   return (
     <> 
       <div className="item-list-container_item animate__animated animate__fadeIn">

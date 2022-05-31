@@ -4,17 +4,17 @@ const Categories = () =>{
     return (
         <>
         <div className="categories-container animate__animated animate__fadeInDown">
-            <Link to='/category/Small'>
+            <Link to='/category/Chicos'>
             <div className="categories-container_small">
                 <p>Chicos</p>
             </div>
             </Link>
-            <Link to='/category/Medium'>
+            <Link to='/category/Medianos'>
             <div className="categories-container_medium">
                 <p>Medianos</p>
             </div>
             </Link>
-            <Link to='/category/Large'>
+            <Link to='/category/Grandes'>
             <div className="categories-container_large">
                 <p>Grandes</p>
             </div>
