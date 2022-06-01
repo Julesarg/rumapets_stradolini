@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import CartWidget from "./CartWidget";
+import {Link} from "react-router-dom";
 
 const Header = () =>{
     return (
@@ -10,10 +11,12 @@ const Header = () =>{
           </div>
           <div className="headerBox_right">
             <p>descansos</p>
-            <CartWidget/>
+            <Link to= {`/cart/`}>
+            <CartWidget />
+            </Link>
           </div>
         </section>
-    <Navbar/>    
+    <Navbar/>
     </header>
     )
 };

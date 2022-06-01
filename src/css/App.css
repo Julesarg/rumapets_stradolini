@@ -161,6 +161,79 @@ body div .fixedTop .navegacion .nav .nav-menu .nav-menu-img img {
   position: relative;
   top: 3px;
 }
+body div .cart-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+body div .cart-container .cart-container-inner {
+  display: flex;
+  flex-direction: column;
+  width: 950px;
+  height: 600px;
+  position: relative;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+body div .cart-container .cart-container-inner .cart-container-inner_title {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+  border-top-left-radius: calc(0.3rem - 1px);
+  border-top-right-radius: calc(0.3rem - 1px);
+}
+body div .cart-container .cart-container-inner .cart-container-inner_title h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: grey;
+  padding-left: 20px;
+}
+body div .cart-container .cart-container-inner .cart-container-inner_title .cart-container-inner_close {
+  width: 23px;
+  height: 23px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  bottom: 27px;
+  left: 10px;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: transparent;
+  transition: 0.2s all ease-in-out;
+}
+body div .cart-container .cart-container-inner .cart-container-inner_title .cart-container-inner_close a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+body div .cart-container .cart-container-inner .cart-container-inner_title .cart-container-inner_close:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body div .cart-container .cart-container-inner .cart-container-inner_body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+  margin-top: 2%;
+  align-items: center;
+}
 body div .item-detail-general {
   width: 100%;
   height: 100%;
@@ -404,6 +477,9 @@ body div .item-detail-general .item-list-container-bis .item-detail-container .i
   color: white;
   font-size: 1.2rem;
 }
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button:focus {
+  background-color: red;
+}
 body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number {
   width: 20%;
   height: 80%;
@@ -429,6 +505,36 @@ body div .item-detail-general .item-list-container-bis .item-detail-container .i
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
+}
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton a .control-container-checkout {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #01a558;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton a .control-container-checkout .control-container-checkout-text {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton a .control-container-checkout:hover {
+  background-color: #002ec7;
 }
 body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-stock {
   width: 100%;
@@ -498,16 +604,28 @@ body div .categories-container a {
 body div .categories-container a .categories-container_small,
 body div .categories-container a .categories-container_medium,
 body div .categories-container a .categories-container_large {
-  justify-content: center;
-  align-items: center;
+  width: 100%;
   background: #d85b8c;
   padding: 5px;
   transition: 0.3s all ease-in-out;
+  border-style: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: white;
 }
 body div .categories-container a .categories-container_small:hover,
 body div .categories-container a .categories-container_medium:hover,
 body div .categories-container a .categories-container_large:hover {
-  background: #c23f71;
+  background: #a11f51;
+}
+body div .categories-container a .categories-container_small:focus,
+body div .categories-container a .categories-container_medium:focus,
+body div .categories-container a .categories-container_large:focus {
+  background: #f1a500;
+  color: black;
+  font-weight: 700;
+  border-inline-style: solid;
+  border-inline-width: 1px;
 }
 body div .item-list-container {
   align-items: center;

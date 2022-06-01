@@ -1,13 +1,9 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import ItemCount from "../ItemCount";
 const descuentoGeneral = 0.9;
 
 
 const Item = (props) => {
-  const onAdd = (stock2) => {
-    alert(`Agregaste ` + stock2 + ` items al carrito`);
-  };
   return (
     <> 
       <div className="item-list-container_item animate__animated animate__fadeIn">
@@ -45,7 +41,6 @@ const Item = (props) => {
             </div>
           </div>
         </div>
-        {/* <ItemCount stock={props.stock} initial={1} onAdd={onAdd} /> */}
       </div>
     </>
   );

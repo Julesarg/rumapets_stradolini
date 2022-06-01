@@ -5,19 +5,19 @@ const Categories = () =>{
         <>
         <div className="categories-container animate__animated animate__fadeInDown">
             <Link to='/category/Chicos'>
-            <div className="categories-container_small">
+            <button className="categories-container_small">
                 <p>Chicos</p>
-            </div>
+            </button>
             </Link>
             <Link to='/category/Medianos'>
-            <div className="categories-container_medium">
+            <button className="categories-container_medium">
                 <p>Medianos</p>
-            </div>
+            </button>
             </Link>
             <Link to='/category/Grandes'>
-            <div className="categories-container_large">
+            <button className="categories-container_large">
                 <p>Grandes</p>
-            </div>
+            </button>
             </Link>
         </div>
         </>
