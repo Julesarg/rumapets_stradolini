@@ -409,14 +409,15 @@ body div {
                   border-radius: 100%;
                   border-style: none;
                   background-color: #002aff;
+                  transition: .1s ease-in-out;
                   cursor: pointer;
                   p {
                     color: white;
                     font-size: 1.2rem;
                   }
                 }
-                .control-container-button:focus {
-                  background-color: red;
+                .control-container-button:active {
+                  background-color: #001ba1;
                 }
                 .control-container-number {
                   @include sizes(20%, 80%);
@@ -773,109 +774,7 @@ body div {
         border-bottom-style: solid;
         border-bottom-width: 2px;
         border-bottom-color: #e09ba3;
-      }
-      .control-container {
-        @include sizes(250px, fit-content);
-        @include display(flex, column);
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 20px;
-        font-weight: 600;
-        color: #fa576a;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 5px;
-        .control-container-img {
-          width: 100px;
-          height: 400px;
-        }
-        .control-container-amount {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          height: 30%;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 10px;
-          margin-bottom: 10px;
-          .control-container-button {
-            cursor: pointer;
-            justify-content: center;
-            align-items: center;
-            @include sizes(20%, 50%);
-            border-radius: 40px;
-            background-color: #d9737f;
-            border-style: none;
-            transition: all 0.2s ease-in-out;
-            .control-container-button-text {
-              font-size: 1.5rem;
-              color: white;
-              transition: all 0.1s ease-in-out;
-            }
-          }
-          .control-container-button:active {
-            background-color: red;
-          }
-          .control-container-number {
-            width: 40%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: all 0.2s ease-in-out;
-            p {
-              font-size: 1.2rem;
-              color: #5e5e5e;
-            }
-          }
-        }
-        .control-container-purchase {
-          display: flex;
-          width: 100%;
-          height: 40px;
-          border-radius: 40px;
-          background-color: #d9737f;
-          box-shadow: 2px 2px 1px rgb(0 0 0 / 20%);
-          justify-content: center;
-          align-items: center;
-          margin-bottom: 10px;
-          transform: perspective(1px) translateZ(0);
-          position: relative;
-          transition-property: color;
-          transition-duration: 0.3s;
-          p {
-            font-weight: 600;
-            color: white;
-            border-bottom-style: none;
-          }
-        }
-        .control-container-purchase:before {
-          content: "";
-          position: absolute;
-          z-index: -1;
-          top: 0;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          background: #e7132c;
-          border-radius: 40px;
-          transform: scaleX(0);
-          transform-origin: 50%;
-          transition-property: transform;
-          transition-duration: 0.3s;
-          transition-timing-function: ease-out;
-        }
-        .control-container-purchase:hover,
-        .control-container-purchase:focus,
-        .control-container-purchase:active {
-          color: white;
-          cursor: pointer;
-        }
-        .control-container-purchase:hover:before,
-        .control-container-purchase:focus:before,
-        .control-container-purchase:active:before {
-          transform: scaleX(1);
-        }
-      }
+      }      
     }
   }
 }

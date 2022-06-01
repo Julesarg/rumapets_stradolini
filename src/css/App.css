@@ -471,14 +471,15 @@ body div .item-detail-general .item-list-container-bis .item-detail-container .i
   border-radius: 100%;
   border-style: none;
   background-color: #002aff;
+  transition: 0.1s ease-in-out;
   cursor: pointer;
 }
 body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button p {
   color: white;
   font-size: 1.2rem;
 }
-body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button:focus {
-  background-color: red;
+body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button:active {
+  background-color: #001ba1;
 }
 body div .item-detail-general .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number {
   width: 20%;
@@ -855,111 +856,6 @@ body div .item-list-container .item-list-container_item .item-list-container_ite
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #e09ba3;
-}
-body div .item-list-container .item-list-container_item .control-container {
-  width: 250px;
-  height: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 20px;
-  font-weight: 600;
-  color: #fa576a;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-top: 5px;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-img {
-  width: 100px;
-  height: 400px;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 30%;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount .control-container-button {
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 50%;
-  border-radius: 40px;
-  background-color: #d9737f;
-  border-style: none;
-  transition: all 0.2s ease-in-out;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount .control-container-button .control-container-button-text {
-  font-size: 1.5rem;
-  color: white;
-  transition: all 0.1s ease-in-out;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount .control-container-button:active {
-  background-color: red;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount .control-container-number {
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-amount .control-container-number p {
-  font-size: 1.2rem;
-  color: #5e5e5e;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase {
-  display: flex;
-  width: 100%;
-  height: 40px;
-  border-radius: 40px;
-  background-color: #d9737f;
-  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  transition-property: color;
-  transition-duration: 0.3s;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase p {
-  font-weight: 600;
-  color: white;
-  border-bottom-style: none;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #e7132c;
-  border-radius: 40px;
-  transform: scaleX(0);
-  transform-origin: 50%;
-  transition-property: transform;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:hover,
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:focus,
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:active {
-  color: white;
-  cursor: pointer;
-}
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:hover:before,
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:focus:before,
-body div .item-list-container .item-list-container_item .control-container .control-container-purchase:active:before {
-  transform: scaleX(1);
 }
 
 @media screen and (max-width: 1024px) {
