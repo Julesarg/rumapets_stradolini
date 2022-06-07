@@ -3,3 +3,5 @@ const NavbarToggle = () => {
 };
 
 export default NavbarToggle;
+
+/////pendiente para responsive

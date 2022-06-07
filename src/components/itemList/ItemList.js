@@ -11,6 +11,7 @@ const ItemList = (props) => {
         {props.items.length > 0 ? (
           props.items.map((item) => (
             <Item
+              cantidad={item.cantidad}
               key={item.id}
               id={item.id}
               img={item.img}

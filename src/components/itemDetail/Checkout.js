@@ -9,3 +9,6 @@ const Checkout = () =>{
 }
 
 export default Checkout;
+
+
+/////boton de checkout

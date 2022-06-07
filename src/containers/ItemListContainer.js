@@ -11,17 +11,15 @@ const ItemListContainer = () => {
   useEffect(() => {
     arrayFetch(
       2000,
-      id === undefined ? products : products.filter((item) => item.category === id))
+      id === undefined
+        ? products
+        : products.filter((item) => item.category === id)
+    )
       .then((result) => setDatos(result))
-      .catch((err) => console.log(err))
-    },
-    [id]);
+      .catch((err) => console.log(err));
+  }, [id]);
 
-      
-
-  return (
-      <ItemList items={datos} />  
-  );
+  return <ItemList items={datos} />;
 };
 
 export default ItemListContainer;

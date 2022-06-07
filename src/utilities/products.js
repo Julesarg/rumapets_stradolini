@@ -1,5 +1,8 @@
 const products = [
   {
+    
+    cantidad: 0,
+    key: 0,
     id: 0,
     img: "../imgs/products/mian.png",
     imgDetail: "../imgs/products/detail/mian.png",
@@ -24,6 +27,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 1,
     id: 1,
     img: "../imgs/products/grecia.png",
     imgDetail: "../imgs/products/detail/grecia.png",
@@ -48,6 +53,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 2,
     id: 2,
     img: "../imgs/products/mianyute.png",
     imgDetail: "../imgs/products/detail/mianyute.png",
@@ -72,6 +79,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 3,
     id: 3,
     img: "../imgs/products/ivy.png",
     imgDetail: "../imgs/products/detail/ivy.png",
@@ -97,6 +106,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 4,
     id: 4,
     img: "../imgs/products/atalaya.png",
     imgDetail: "../imgs/products/detail/atalaya.png",
@@ -121,6 +132,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 5,
     id: 5,
     img: "../imgs/products/nuagealfombra.png",
     imgDetail: "../imgs/products/detail/nuagealfombra.png",
@@ -145,6 +158,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 6,
     id: 6,
     img: "../imgs/products/nuage.png",
     imgDetail: "../imgs/products/detail/nuage.png",
@@ -169,6 +184,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 7,
     id: 7,
     img: "../imgs/products/kamui.png",
     imgDetail: "../imgs/products/detail/kamui.png",
@@ -193,6 +210,8 @@ const products = [
       "Trabajamos a pedido; el tiempo de demora es de 3 semanas aproximadamente. En caso de terminar antes el producto se coordina retiro o entrega. Corroborar stock de colores y materiales. Trabajamos con mensajería privada para entregas dentro de CABA y GBA. Podes consultar costos por nuestros canales de atención. Podes retirar por Caballito en los horarios establecidos (no es local a la calle)",
   },
   {
+    cantidad: 0,
+    key: 8,
     id: 8,
     img: "../imgs/products/ruma.png",
     imgDetail: "../imgs/products/detail/ruma.png",

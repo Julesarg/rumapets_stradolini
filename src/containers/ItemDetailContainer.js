@@ -17,9 +17,7 @@ const ItemDetailContainer = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  return (
-      <ItemDetail item={dato} />
-  );
+  return <ItemDetail item={dato} />;
 };
 
 export default ItemDetailContainer;

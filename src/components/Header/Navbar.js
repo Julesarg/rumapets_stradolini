@@ -23,37 +23,37 @@ const Navbar = () => {
         </div>
         <ul className="nav-menu">
           <li className="nav-menu-item">
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               INICIO
-            </a>
+            </div>
           </li>
           <li className="nav-menu-item">
           <Link to='./'>
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               PRODUCTOS
-            </a>
+            </div>
           </Link>
           </li>
           <li className="nav-menu-item">
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               MATERIALES
-            </a>
+            </div>
           </li>
           <Logo />
           <li className="nav-menu-item">
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               PAGOS Y ENVIOS
-            </a>
+            </div>
           </li>
           <li className="nav-menu-item">
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               CLIENTES
-            </a>
+            </div>
           </li>
           <li className="nav-menu-item">
-            <a href="/#" className="textoNavBar">
+            <div className="textoNavBar">
               NOSOTROS
-            </a>
+            </div>
           </li>
         </ul>
       </nav>
