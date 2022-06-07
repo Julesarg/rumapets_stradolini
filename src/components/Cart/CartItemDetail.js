@@ -3,6 +3,7 @@ import { CartContext } from "./CartContext";
 
 const CartItemDetail = () => {
   const test = useContext(CartContext);
+  
 
   return test.cartList.map((item) => (
     <div className="cart-container-inner_body_product">

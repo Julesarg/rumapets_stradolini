@@ -14,7 +14,7 @@ const ItemModal = (item) => {
   const onAdd = (stock2) => {
     alert(`Agregaste ` + stock2 + ` items al carrito`);
     setItemCount(stock2);
-    test.addToCart(item);
+    test.addItem(item, stock2);
   };
 
   return (
