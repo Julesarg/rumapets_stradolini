@@ -8,13 +8,14 @@ import { CartContext } from "../Cart/CartContext";
 const descuentoGeneral = 0.9;
 
 const ItemModal = (item) => {
+  const { id, img, modelo, price } = item;
   const [itemCount, setItemCount] = useState(0);
   const test = useContext(CartContext);
 
-  const onAdd = (stock2) => {
-    alert(`Agregaste ` + stock2 + ` items al carrito`);
-    setItemCount(stock2);
-    test.addItem(item, stock2);
+  const onAdd = (cantidad) => {
+    alert(`Agregaste ` + cantidad + ` items al carrito`);
+    setItemCount(cantidad);
+    test.addItem({ cantidad, id, img, modelo, price });
   };
 
   return (

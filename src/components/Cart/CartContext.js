@@ -4,29 +4,38 @@ export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
-  
-//agregar al carrito
 
-const addItem = (item, quantity) => {
-  const foundItem = cartList.find(el => el.id == item.id);
+  //agregar al carrito OK
+  const addItem = ({ cantidad, id, img, modelo, price }) => {
+    const found = cartList.find((el) => el.id === id);
 
+    const findDuplicated = (found, cartList) => {
+      cartList.forEach((element) => {
+        if (found.id === element.id) {
+          return (element.cantidad = cantidad + element.cantidad);
+        }
+      });
+    };
+    if (found) {
+      findDuplicated(found, cartList);
+    } else {
+      setCartList([...cartList, { cantidad, id, img, modelo, price }]);
+    }
+  };
 
-  const findDuplicated = (foundItem, cartList) => {
+  //borrar del carrito ME FALTA
+  const removeItem = (id) => {
+    const newArray = cartList.filter((el) => el.id !== parseInt(id));
+    setCartList(newArray);
+  };
 
-    cartList.forEach( (element) => {
-      if (foundItem.id === element.id){
-        return (element.cantidad = quantity + element.cantidad
-    )}
-    })
-    
-  }
-  
-  if (foundItem) { findDuplicated(foundItem, cartList) } else { setCartList([...cartList, item])}
-}
-
+  //borrar todo OK
+  const removeAll = () => {
+    setCartList([]);
+  };
 
   return (
-    <CartContext.Provider value={{ cartList, addItem}}>
+    <CartContext.Provider value={{ cartList, addItem, removeItem, removeAll }}>
       {children}
     </CartContext.Provider>
   );

@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
+import CartDeleteItemButton from "./CartDeleteItemButton";
 
 const CartItemDetail = () => {
   const test = useContext(CartContext);
-  
 
   return test.cartList.map((item) => (
     <div className="cart-container-inner_body_product">
@@ -27,18 +27,14 @@ const CartItemDetail = () => {
       <div className="cart-container-inner_body_product_quantity">
         <div className="cart-container-inner_body_product_quantity_inner">
           <p>Cantidad</p>
-          <div className="cart-container-inner_body_product_quantity_buttons">            
+          <div className="cart-container-inner_body_product_quantity_buttons">
             <div>
-              <p>
-                {item.cantidad}
-              </p>
+              <p>{item.cantidad}</p>
             </div>
           </div>
         </div>
       </div>
-      <button className="cart-container-inner_body_product_delete">
-        <p>Eliminar</p>
-      </button>
+      <CartDeleteItemButton />
     </div>
   ));
 };

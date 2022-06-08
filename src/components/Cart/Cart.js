@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 import CartEmpty from "./CartEmpty";
 import CartItemDetail from "./CartItemDetail";
+import CartDeleteAllButton from "./CartDeleteAllButton";
 
 const Cart = () => {
   const test = useContext(CartContext);
@@ -17,7 +18,7 @@ const Cart = () => {
                 </div>
               </div>
               <div className="cart-container-inner_body">
-              {test.cartList.length === 0 ? <CartEmpty /> : <CartItemDetail />}
+              {test.cartList.length === 0 ? <CartEmpty /> : <><CartItemDetail /><CartDeleteAllButton /></>}
               </div>            
           </div>
       </div>
