@@ -25,9 +25,14 @@ const CartContextProvider = ({ children }) => {
 
   //borrar del carrito ME FALTA
   const removeItem = (id) => {
+    const resetCantidad = cartList.find(el => el.id === parseInt(id))
+    resetCantidad.cantidad = 0;
     const newArray = cartList.filter((el) => el.id !== parseInt(id));
     setCartList(newArray);
   };
+
+
+
 
   //borrar todo OK
   const removeAll = () => {

@@ -34,7 +34,7 @@ const CartItemDetail = () => {
           </div>
         </div>
       </div>
-      <CartDeleteItemButton />
+      <CartDeleteItemButton item={item}/>
     </div>
   ));
 };

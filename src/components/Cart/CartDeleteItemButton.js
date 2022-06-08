@@ -1,16 +1,14 @@
 import { CartContext } from "../Cart/CartContext";
 import React, { useContext } from "react";
 
-const CartDeleteItemButton = ({ items }) => {
-  const test = useContext(CartContext);
-
-  const deleteItem = () => {
-    test.removeItem(items.id);
-  };
+const CartDeleteItemButton = ({item}) => {
+  
+  const itemId = item.id
+  const { removeItem } = useContext(CartContext);
 
   return (
     <button
-      onClick={deleteItem}
+    onClick={(e) => {e.stopPropagation();removeItem(itemId)}}
       className="cart-container-inner_body_product_delete"
     >
       <div
