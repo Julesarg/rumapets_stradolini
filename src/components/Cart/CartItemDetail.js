@@ -24,17 +24,23 @@ const CartItemDetail = () => {
           <p>${item.price}</p>
         </div>
       </div>
+
+      <div className="cart-container-inner_body_product_title">
+        <div className="cart-container-inner_body_product_title_texts">
+          <p className="model">Subtotal</p>
+          <p>${item.price*item.cantidad}</p>
+        </div>
+      </div>
+
       <div className="cart-container-inner_body_product_quantity">
         <div className="cart-container-inner_body_product_quantity_inner">
           <p>Cantidad</p>
           <div className="cart-container-inner_body_product_quantity_buttons">
-            <div>
-              <p>{item.cantidad}</p>
-            </div>
+            <p>{item.cantidad}</p>
           </div>
         </div>
       </div>
-      <CartDeleteItemButton item={item}/>
+      <CartDeleteItemButton item={item} />
     </div>
   ));
 };

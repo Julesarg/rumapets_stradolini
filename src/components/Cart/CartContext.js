@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useReducer, useState } from "react";
 
 export const CartContext = createContext();
 
@@ -23,27 +23,71 @@ const CartContextProvider = ({ children }) => {
     }
   };
 
-  //borrar del carrito ME FALTA
+  //borrar del carrito ok
   const removeItem = (id) => {
-    const resetCantidad = cartList.find(el => el.id === parseInt(id))
+    const resetCantidad = cartList.find((el) => el.id === parseInt(id));
     resetCantidad.cantidad = 0;
     const newArray = cartList.filter((el) => el.id !== parseInt(id));
     setCartList(newArray);
   };
-
-
-
 
   //borrar todo OK
   const removeAll = () => {
     setCartList([]);
   };
 
+  //mostrar cantidad de items en carrito
+  const calcItemsQty = () => {
+    let totalAmount = cartList.map((item) => item.cantidad);
+    return totalAmount.reduce(
+      (valorInicial, valorFinal) => valorInicial + valorFinal,
+      0
+    );
+  };
+
+  //subtotal precio productos
+  const calcItemsPriceTotal = () => {
+    let totalItemsPrice = cartList.map((item) => item.price * item.cantidad);
+    return totalItemsPrice.reduce(
+      (valorInicial, valorFinal) => valorInicial + valorFinal,
+      0
+    );
+  };
+
+  //impuestos por embalaje
+  const calcTaxes = () => {
+    let totalTaxes = calcItemsPriceTotal() * 0.1;
+    return totalTaxes;
+  };
+
+  //impuestos por embalaje
+  const calcDiscount = () => {
+    let totalDiscount = calcItemsPriceTotal() * 0.15;
+    return totalDiscount;
+  };
+
+  //total de compra
+  const calcTotal = () => {
+    let totalPurchase = calcItemsPriceTotal() + calcTaxes() - calcDiscount();
+    return totalPurchase;
+  };
+
   return (
-    <CartContext.Provider value={{ cartList, addItem, removeItem, removeAll }}>
+    <CartContext.Provider
+      value={{
+        cartList,
+        addItem,
+        removeItem,
+        removeAll,
+        calcItemsQty,
+        calcItemsPriceTotal,
+        calcTaxes,
+        calcDiscount,
+        calcTotal,
+      }}
+    >
       {children}
     </CartContext.Provider>
   );
 };
-
 export default CartContextProvider;
