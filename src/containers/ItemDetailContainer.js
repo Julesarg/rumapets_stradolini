@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     arrayFetch(
-      1500,
+      1000,
       products.find((item) => item.id === Number(id))
     )
       .then((result) => setDato(result))

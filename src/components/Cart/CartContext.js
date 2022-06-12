@@ -1,11 +1,11 @@
-import { createContext, useReducer, useState } from "react";
+import { createContext, useState } from "react";
 
 export const CartContext = createContext();
 
 const CartContextProvider = ({ children }) => {
   const [cartList, setCartList] = useState([]);
 
-  //agregar al carrito OK
+  //agregar al carrito
   const addItem = ({ cantidad, id, img, modelo, price }) => {
     const found = cartList.find((el) => el.id === id);
 
@@ -18,12 +18,13 @@ const CartContextProvider = ({ children }) => {
     };
     if (found) {
       findDuplicated(found, cartList);
+      setCartList([...cartList]);
     } else {
       setCartList([...cartList, { cantidad, id, img, modelo, price }]);
     }
   };
 
-  //borrar del carrito ok
+  //borrar del carrito individual
   const removeItem = (id) => {
     const resetCantidad = cartList.find((el) => el.id === parseInt(id));
     resetCantidad.cantidad = 0;
@@ -31,7 +32,7 @@ const CartContextProvider = ({ children }) => {
     setCartList(newArray);
   };
 
-  //borrar todo OK
+  //borrar todo
   const removeAll = () => {
     setCartList([]);
   };
@@ -40,7 +41,7 @@ const CartContextProvider = ({ children }) => {
   const calcItemsQty = () => {
     let totalAmount = cartList.map((item) => item.cantidad);
     return totalAmount.reduce(
-      (valorInicial, valorFinal) => valorInicial + valorFinal,
+      (accumulador, valorDos) => accumulador + valorDos,
       0
     );
   };
@@ -60,7 +61,7 @@ const CartContextProvider = ({ children }) => {
     return totalTaxes;
   };
 
-  //impuestos por embalaje
+  //descuento por promocion
   const calcDiscount = () => {
     let totalDiscount = calcItemsPriceTotal() * 0.15;
     return totalDiscount;

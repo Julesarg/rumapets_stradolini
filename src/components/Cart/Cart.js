@@ -14,17 +14,21 @@ const Cart = () => {
         <div className="cart-container-inner">
           <div className="cart-container-inner_title">
             <h5>Carrito</h5>
-            <div className="cart-container-inner_close">
-              <Link to="../">X</Link>
-            </div>
+            {test.cartList.length === 0 ? (
+              <div className="cart-container-inner_close">
+                <Link to="../">X</Link>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
           <div className="cart-container-inner_body">
             {test.cartList.length === 0 ? (
-              <CartEmpty />
+              <CartEmpty key={test.id} />
             ) : (
               <>
-                <CartItemDetail />
-                <CartDeleteAllButton />
+                <CartItemDetail key={test.id} />
+                <CartDeleteAllButton key={test.id} />
               </>
             )}
           </div>

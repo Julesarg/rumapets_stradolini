@@ -10,7 +10,7 @@ const ItemListContainer = () => {
 
   useEffect(() => {
     arrayFetch(
-      2000,
+      1000,
       id === undefined
         ? products
         : products.filter((item) => item.category === id)

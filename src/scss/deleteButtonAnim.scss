@@ -1,6 +1,5 @@
 ///deleteAll
 
-$red: #f44336;
 @mixin transition($in) {
   transition: $in;
   -webkit-transition: $in;
@@ -54,7 +53,28 @@ $red: #f44336;
       @include transform(rotateZ(45deg));
     }
     &:hover {
-      background-color: $red;
+      background-color: #f44336;;
+      border-color: #fff;
+      color: #fff;
+      .insider {
+        @include transition(all 0.3s ease);
+        left: 135px;
+      }
+    }
+  }
+  .two{border-color: #fff;
+    overflow: hidden;
+    color: rgba(0, 0, 0, 0.6);
+    .insider {
+      background-color: #fff;
+      width: 100%;
+      height: 20px;
+      position: absolute;
+      left: -135px;
+      @include transform(rotateZ(45deg));
+    }
+    &:hover {
+      background-color: #3688f4;;
       border-color: #fff;
       color: #fff;
       .insider {
