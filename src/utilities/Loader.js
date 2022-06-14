@@ -9,6 +9,3 @@ const Loader = () => {
     )
 }
 export default Loader;
-
-
-////animacion loader

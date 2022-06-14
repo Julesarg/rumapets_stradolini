@@ -1,11 +1,10 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 const descuentoGeneral = 0.9;
-
 
 const Item = (props) => {
   return (
-    <> 
+    <>
       <div className="item-list-container_item animate__animated animate__fadeIn">
         <div className="item-list-container_item_title">
           <h3>{props.modelo}</h3>
@@ -34,9 +33,7 @@ const Item = (props) => {
                 </div>
               </div>
               <button>
-              <Link to={`/item/${Number(props.id)}`}>
-                ver detalle
-              </Link>
+                <Link to={`/item/${props.id}`}>ver detalle</Link>
               </button>
             </div>
           </div>

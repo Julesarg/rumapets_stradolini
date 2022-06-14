@@ -26,9 +26,9 @@ const CartContextProvider = ({ children }) => {
 
   //borrar del carrito individual
   const removeItem = (id) => {
-    const resetCantidad = cartList.find((el) => el.id === parseInt(id));
+    const resetCantidad = cartList.find((el) => el.id === id);
     resetCantidad.cantidad = 0;
-    const newArray = cartList.filter((el) => el.id !== parseInt(id));
+    const newArray = cartList.filter((el) => el.id !== id);
     setCartList(newArray);
   };
 
