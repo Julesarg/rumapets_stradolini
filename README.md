@@ -33,6 +33,12 @@ Adobe Photoshop 2021 22.0.1
 `
 +Git & GitHub
 `
+`
++Uso de Context
+`
+`
++Firebase Firestore
+`
 ## Fuentes y add-ons externos
 
 Animaciones JS
