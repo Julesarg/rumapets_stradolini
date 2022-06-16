@@ -24,11 +24,11 @@ const Cart = () => {
           </div>
           <div className="cart-container-inner_body">
             {test.cartList.length === 0 ? (
-              <CartEmpty key={test.id} />
+              <CartEmpty />
             ) : (
               <>
-                <CartItemDetail key={test.id} />
-                <CartDeleteAllButton key={test.id} />
+                <CartItemDetail  />
+                <CartDeleteAllButton  />
               </>
             )}
           </div>
