@@ -28,13 +28,6 @@ const CartCheckout = ({ products, taxes, discount, total }) => {
           ${total}
         </p>
       </div>
-
-      <div className="deleteButton-container">
-        <button className="deleteButton-container-button two">
-          <div className="insider"></div>
-          Continuar a Pago
-        </button>
-      </div>
     </>
   );
 };

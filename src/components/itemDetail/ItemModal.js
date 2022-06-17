@@ -51,8 +51,9 @@ const ItemModal = (item) => {
             </div>
           </div>
           <div className="item-detail-container_right-addButton">
+
             {itemCount === 0 ? (
-              <ItemCount stock={item.stock} initial={1} onAdd={onAdd} />
+              <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />              
             ) : (
               <Link to="/cart">
                 <Checkout />

@@ -5,9 +5,52 @@ import CartEmpty from "./CartEmpty";
 import CartItemDetail from "./CartItemDetail";
 import CartDeleteAllButton from "./CartDeleteAllButton";
 import CartCheckout from "./CartCheckout";
+import { serverTimestamp, doc, updateDoc, collection, setDoc, increment } from "firebase/firestore";
+import db from "../../utilities/firebaseConfig";
 
 const Cart = () => {
   const test = useContext(CartContext);
+
+  const crearOrden = () => {
+    let arrayForDB = test.cartList.map((item) => ({
+      id: item.id,
+      price: item.price,
+      modelo: item.modelo,
+      cantidad: item.cantidad,
+    }));
+
+    let pedido = {
+      buyer: {
+        email: "test@gmail.com",
+        name: "Jane Doe",
+        phone: "1156859948",
+      },
+      date: serverTimestamp(),
+      total: test.calcTotal(),
+      items: arrayForDB,
+    };
+    console.log(pedido);
+
+    const createOrderInFirestore = async () => {
+      const newOrderRef = doc(collection(db, "orders"));
+      await setDoc(newOrderRef, pedido);
+      return newOrderRef;
+    };
+    createOrderInFirestore()
+      .then((result) =>
+        alert("Pedido realizado! Tu codigo de compra es" + result.id)
+      )
+      .catch((err) => console.log(err));
+
+      test.cartList.forEach( async item => {
+        const itemToUpdate = doc(db, "products", item.id);
+        await updateDoc(itemToUpdate, {
+          stock: increment(-item.cantidad)
+        })        
+      });     
+
+    test.removeAll();
+  };
   return (
     <>
       <div className="cart-container">
@@ -27,8 +70,8 @@ const Cart = () => {
               <CartEmpty />
             ) : (
               <>
-                <CartItemDetail  />
-                <CartDeleteAllButton  />
+                <CartItemDetail />
+                <CartDeleteAllButton />
               </>
             )}
           </div>
@@ -43,6 +86,16 @@ const Cart = () => {
               discount={test.calcDiscount()}
               total={test.calcTotal()}
             />
+
+            <div className="deleteButton-container">
+              <button
+                onClick={crearOrden}
+                className="deleteButton-container-button two"
+              >
+                <div className="insider"></div>
+                Hacer Pedido
+              </button>
+            </div>
           </div>
         )}
       </div>
