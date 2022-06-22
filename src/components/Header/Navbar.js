@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarToggle from "./NavbarToggle";
 import Logo from "./Logo";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -23,37 +23,25 @@ const Navbar = () => {
         </div>
         <ul className="nav-menu">
           <li className="nav-menu-item">
-            <div className="textoNavBar">
-              INICIO
-            </div>
+            <div className="textoNavBar">INICIO</div>
           </li>
           <li className="nav-menu-item">
-          <Link to='./'>
-            <div className="textoNavBar">
-              PRODUCTOS
-            </div>
-          </Link>
+            <Link to="./">
+              <div className="textoNavBar">PRODUCTOS</div>
+            </Link>
           </li>
           <li className="nav-menu-item">
-            <div className="textoNavBar">
-              MATERIALES
-            </div>
+            <div className="textoNavBar">MATERIALES</div>
           </li>
           <Logo />
           <li className="nav-menu-item">
-            <div className="textoNavBar">
-              PAGOS Y ENVIOS
-            </div>
+            <div className="textoNavBar">PAGOS Y ENVIOS</div>
           </li>
           <li className="nav-menu-item">
-            <div className="textoNavBar">
-              CLIENTES
-            </div>
+            <div className="textoNavBar">CLIENTES</div>
           </li>
           <li className="nav-menu-item">
-            <div className="textoNavBar">
-              NOSOTROS
-            </div>
+            <div className="textoNavBar">NOSOTROS</div>
           </li>
         </ul>
       </nav>

@@ -1,0 +1,7 @@
+.item-detail-general {
+    @include sizes(100%, 100%);
+    @include display(flex, row);
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;   
+  }

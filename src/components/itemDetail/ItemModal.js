@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 import Checkout from "./Checkout";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { CartContext } from "../Cart/CartContext";
+import { CartContext } from "../cart/CartContext";
 
 const descuentoGeneral = 0.9;
 
@@ -36,9 +36,8 @@ const ItemModal = (item) => {
             <p>{item.detail}</p>
           </div>
           <div className="item-detail-container_right-colorStock">
-            <p>
-              Consultar disponibilidad de colores <a href="/#">AQUI</a>
-            </p>
+            <p>Consultar disponibilidad de colores</p>
+            <a href="/#">AQUI</a>
           </div>
           <div className="item-detail-container_right-prices">
             <div className="item-detail-container_right-prices-list">
@@ -51,9 +50,8 @@ const ItemModal = (item) => {
             </div>
           </div>
           <div className="item-detail-container_right-addButton">
-
             {itemCount === 0 ? (
-              <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />              
+              <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
             ) : (
               <Link to="/cart">
                 <Checkout />

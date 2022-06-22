@@ -1,19 +1,19 @@
 import "./css/App.css";
 import React from "react";
-import Header from "./components/Header/Header";
+import Header from "./components/header/Header";
 import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Cart from "./components/Cart/Cart";
-import CartContextProvider from "./components/Cart/CartContext";
+import Cart from "./components/cart/Cart";
+import CartContextProvider from "./components/cart/CartContext";
 
 const App = () => {
   return (
     <>
-    <CartContextProvider>
+      <CartContextProvider>
         <BrowserRouter>
-        <Header />
-          <Routes>        
+          <Header />
+          <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:id" element={<ItemListContainer />} />
             <Route path="/item/:id" element={<ItemDetailContainer />} />

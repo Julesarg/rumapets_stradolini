@@ -1,0 +1,51 @@
+.control-container {
+    @include sizes(100%, auto);
+    @include display(flex, row);
+    justify-content: flex-end;
+    .control-container-amount {
+      @include sizes(60%, auto);
+      @include display(flex, row);
+      justify-content: flex-end;
+      margin-right: 10%;
+      .control-container-button {
+        @include sizes(30px, 80%);
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border-style: none;
+        background-color: #002aff;
+        transition: 0.1s ease-in-out;
+        cursor: pointer;
+        p {
+          color: white;
+          font-size: 1.2rem;
+        }
+      }
+      .control-container-button:active {
+        background-color: #001ba1;
+      }
+      .control-container-number {
+        @include sizes(20%, 80%);
+        justify-content: center;
+        align-items: center;
+        p {
+          font-size: 1.1rem;
+          font-weight: 500;
+        }
+      }
+    }
+    .control-container-purchase {
+      @include sizes(40%, 80%);
+      @include display(flex, row);
+      justify-content: center;
+      align-items: center;
+      background-color: #002aff;
+      border-radius: 10px;
+      cursor: pointer;
+      .control-container-purchase-text {
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 700;
+      }
+    }
+  }

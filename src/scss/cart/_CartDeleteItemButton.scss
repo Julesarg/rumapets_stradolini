@@ -1,0 +1,74 @@
+$speed: 0.5s;
+.cart-container-inner_body_product_delete {
+  border-style: none;
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+
+  .btn-flip {
+    width: 75%;
+    border-radius: 10px;
+    opacity: 1;
+    outline: 0;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      &:after {
+        border-radius: 10px;
+        opacity: 1;
+        transform: translateY(0) rotateX(0);
+      }
+
+      &:before {
+        border-radius: 10px;
+        opacity: 0;
+        transform: translateY(50%) rotateX(90deg);
+      }
+    }
+
+    &:after {
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      color: #ffffff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: block;
+      transition: $speed;
+      position: absolute;
+      background: #c95663;
+      content: attr(data-back);
+      transform: translateY(-50%) rotateX(90deg);
+    }
+
+    &:before {
+      border-radius: 10px;
+      top: 0;
+      left: 0;
+      opacity: 1;
+      color: #696969;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: block;
+      padding-left: 10px;
+      padding-right: 10px;
+      line-height: 40px;
+      transition: $speed;
+      position: relative;
+      background: #c2c2c2;
+      content: attr(data-front);
+      transform: translateY(0) rotateX(0);
+    }
+  }
+}

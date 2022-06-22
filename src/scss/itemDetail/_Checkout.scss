@@ -1,0 +1,26 @@
+a {
+  text-decoration: none;
+  @include sizes(100%, 100%);
+  @include display(flex, row);
+  justify-content: center;
+  align-items: center;
+  .control-container-checkout {
+    @include sizes(50%, 80%);
+    @include display(flex, row);
+    justify-content: center;
+    align-items: center;
+    background-color: #01a558;
+    border-radius: 10px;
+    border-style: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    .control-container-checkout-text {
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+  }
+  .control-container-checkout:hover {
+    background-color: #002ec7;
+  }
+}

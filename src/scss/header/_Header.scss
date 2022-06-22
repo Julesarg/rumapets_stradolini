@@ -1,0 +1,67 @@
+.fixedTop {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  top: 0;
+  left: 0;
+  .headerBox {
+    display: flex;
+    @include sizes(100%, 40px);
+    background-color: white;
+    .headerBox_left {
+      display: flex;
+      @include sizes(50%, 100%);
+      align-items: flex-end;
+      p {
+        display: block;
+        width: fit-content;
+        opacity: 0.4;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 500;
+        word-spacing: 10rem;
+        text-transform: uppercase;
+        @include margin(0%, 0%, 0%, 0%);
+        padding: 0%;
+        padding-top: 5px;
+        padding-right: 10%;
+      }
+    }
+  }
+}
+
+//1024
+@media screen and (max-width: 1024px) {
+  body div .fixedTop .headerBox {
+    height: 33px;
+    .headerBox_left {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+}
+
+//768//
+@media screen and (max-width: 768px) {
+  body div .fixedTop .headerBox {
+    .headerBox_left {
+      p {
+        padding-right: 15%;
+      }
+    }
+  }
+}
+
+//576//
+@media screen and (max-width: 576px) {
+  body div .fixedTop .headerBox {
+    height: 29px;
+    .headerBox_left {
+      p {
+        font-size: 0.6rem;
+      }
+    }
+  }
+}

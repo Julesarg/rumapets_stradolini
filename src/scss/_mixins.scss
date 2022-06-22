@@ -1,0 +1,43 @@
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}
+@mixin display($display, $flexDirection) {
+  display: $display;
+  flex-direction: $flexDirection;
+}
+
+@mixin margin($top, $bottom, $left, $right) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin padding($top, $bottom, $left, $right) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+  padding-left: $left;
+  padding-right: $right;
+}
+@mixin transition($in) {
+  transition: $in;
+  -webkit-transition: $in;
+  -moz-transition: $in;
+  -o-transition: $in;
+  -ms-transition: $in;
+}
+@mixin transform($in) {
+  transform: $in;
+  -webkit-transform: $in;
+  -moz-transform: $in;
+  -o-transform: $in;
+  -ms-transform: $in;
+}
+@mixin animation($in) {
+  animation: $in;
+  -webkit-animation: $in;
+  -moz-animation: $in;
+  -o-animation: $in;
+  -ms-animation: $in;
+}

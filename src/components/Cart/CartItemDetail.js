@@ -28,7 +28,7 @@ const CartItemDetail = () => {
       <div className="cart-container-inner_body_product_title">
         <div className="cart-container-inner_body_product_title_texts">
           <p className="model">Subtotal</p>
-          <p>${item.price*item.cantidad}</p>
+          <p>${item.price * item.cantidad}</p>
         </div>
       </div>
 

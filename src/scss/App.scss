@@ -1,8 +1,25 @@
 @import "variables";
-@import "utilities/mixins";
-@import "base/typography";
-@import "main";
-@import "deleteButtonAnim";
+@import "mixins";
+@import "header/Header";
+@import "header/CartWidget";
+@import "header/CartQuantity";
+@import "header/Navbar";
+@import "header/Logo";
+@import "cart/Cart";
+@import "cart/CartCheckout";
+@import "cart/CartDeleteAllButton";
+@import "cart/CartDeleteItemButton";
+@import "cart/CartEmpty";
+@import "cart/CartItemDetail";
+@import "itemDetail/Checkout";
+@import "itemDetail/ItemCount";
+@import "itemDetail/ItemDetail";
+@import "itemDetail/ItemModal";
+@import "utilities/Loader";
+@import "itemList/Categories";
+@import "itemList/ItemList";
+@import "itemList/Item";
+
 
 * {
   margin: 0;
@@ -17,6 +34,12 @@ body {
   height: 100%;
   flex-flow: column;
   font-size: 14px;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 }
 main {
   flex: 1;

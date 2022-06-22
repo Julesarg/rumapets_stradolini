@@ -1,0 +1,12 @@
+.nav-menu-img {
+    @include display(flex, row);
+    justify-content: center;
+    align-items: center;
+    width: 14.28%;
+    img {
+      height: 110px;
+      width: auto;
+      position: relative;
+      top: 3px;
+    }
+  }

@@ -1,0 +1,15 @@
+.item-list-container {
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  width: 85%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 50px;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+}

@@ -1,0 +1,30 @@
+.cart-container-empty {
+  @include display(flex, row);
+  @include sizes(100%, 130px);
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgb(0 0 0 / 20%);
+  text-align: right;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 15px;
+  img {
+    width: auto;
+    height: 100%;
+    margin-right: 50px;
+  }
+  .cart-container-empty_textContainer {
+    @include display(flex, column);
+    @include sizes(300px, 100%);
+    text-align: center;
+    justify-content: center;
+    margin-left: 50px;
+    p {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: rgba(0, 0, 0, 0.4);
+    }
+  }
+}

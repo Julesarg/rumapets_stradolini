@@ -5,7 +5,14 @@ import CartEmpty from "./CartEmpty";
 import CartItemDetail from "./CartItemDetail";
 import CartDeleteAllButton from "./CartDeleteAllButton";
 import CartCheckout from "./CartCheckout";
-import { serverTimestamp, doc, updateDoc, collection, setDoc, increment } from "firebase/firestore";
+import {
+  serverTimestamp,
+  doc,
+  updateDoc,
+  collection,
+  setDoc,
+  increment,
+} from "firebase/firestore";
 import db from "../../utilities/firebaseConfig";
 
 const Cart = () => {
@@ -29,7 +36,6 @@ const Cart = () => {
       total: test.calcTotal(),
       items: arrayForDB,
     };
-    console.log(pedido);
 
     const createOrderInFirestore = async () => {
       const newOrderRef = doc(collection(db, "orders"));
@@ -42,12 +48,12 @@ const Cart = () => {
       )
       .catch((err) => console.log(err));
 
-      test.cartList.forEach( async item => {
-        const itemToUpdate = doc(db, "products", item.id);
-        await updateDoc(itemToUpdate, {
-          stock: increment(-item.cantidad)
-        })        
-      });     
+    test.cartList.forEach(async (item) => {
+      const itemToUpdate = doc(db, "products", item.id);
+      await updateDoc(itemToUpdate, {
+        stock: increment(-item.cantidad),
+      });
+    });
 
     test.removeAll();
   };
