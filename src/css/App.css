@@ -1081,6 +1081,37 @@ a .control-container-checkout:hover {
   background-color: rgba(36, 36, 43, 0.9);
 }
 
+.swal2-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+}
+.swal2-container .swal2-popup {
+  height: 120px !important;
+  width: 20% !important;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px !important;
+  background: #dbdbdb !important;
+}
+.swal2-container .swal2-popup .swal2-icon {
+  display: none !important;
+}
+.swal2-container .swal2-popup .swal2-image {
+  margin: 0px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+}
+.swal2-container .swal2-popup .swal2-title {
+  width: 60%;
+  padding: 0px;
+  font-size: 1.2rem;
+}
+
 .container-spinner {
   display: flex;
   flex-direction: column;

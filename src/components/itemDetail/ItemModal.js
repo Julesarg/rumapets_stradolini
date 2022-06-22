@@ -4,6 +4,8 @@ import Checkout from "./Checkout";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { CartContext } from "../cart/CartContext";
+import Swal from 'sweetalert2'
+import withReactContent from 'sweetalert2-react-content'
 
 const descuentoGeneral = 0.9;
 
@@ -12,8 +14,16 @@ const ItemModal = (item) => {
   const [itemCount, setItemCount] = useState(0);
   const test = useContext(CartContext);
 
-  const onAdd = (cantidad) => {
-    alert(`Agregaste ` + cantidad + ` items al carrito`);
+  const onAdd = (cantidad) => {    
+  //sweetalert2
+  const MySwal = withReactContent(Swal)
+  MySwal.fire({
+    imageUrl: `${item.img}`,
+    title: `Has agregado ${cantidad} "${item.modelo}" a tu carrito`,
+    showConfirmButton: false,
+    timer: 1500,
+  });
+
     setItemCount(cantidad);
     test.addItem({ cantidad, id, img, modelo, price });
   };

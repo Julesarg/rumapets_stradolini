@@ -150,3 +150,34 @@
     }
   }
 }
+
+.swal2-container {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  .swal2-popup {
+    height: 120px !important;
+    width: 20% !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px !important;
+    background: #dbdbdb !important;
+    .swal2-icon {
+      display: none !important;
+    }
+    .swal2-image {
+      margin: 0px;
+      padding: 10px;
+      width: 100px;
+      height: 100px;
+      box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 30%);
+    }
+    .swal2-title {
+      width: 60%;
+      padding: 0px;
+      font-size: 1.2rem;
+    }
+  }
+}

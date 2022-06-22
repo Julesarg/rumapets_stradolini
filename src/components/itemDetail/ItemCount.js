@@ -8,7 +8,6 @@ const ItemCount = (props) => {
   const lessItem = () => {
     if (stock > 1) setStock(stock - 1);
   };
-
   return (
     <div className="control-container">
       <div className="control-container-amount">
@@ -30,7 +29,7 @@ const ItemCount = (props) => {
       >
         <p className="control-container-purchase-text">ADD TO CART</p>
       </div>
-    </div>
+    </div>    
   );
 };
 export default ItemCount;
