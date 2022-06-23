@@ -1,0 +1,28 @@
+.three {
+  border-color: #fff;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.6);
+  a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .insider {
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    left: -135px;
+    @include transform(rotateZ(45deg));
+  }
+  &:hover {
+    background-color: #0097c5;
+    border-color: #fff;
+    color: #fff;
+    a {
+      color: white;
+    }
+    .insider {
+      @include transition(all 0.3s ease);
+      left: 135px;
+    }
+  }
+}

@@ -2,9 +2,9 @@
   .deleteButton-container-button {
     outline: none;
     border-style: none;
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
     display: block;
@@ -51,7 +51,7 @@
       @include transform(rotateZ(45deg));
     }
     &:hover {
-      background-color: #3688f4;
+      background-color: #01a036;
       border-color: #fff;
       color: #fff;
       .insider {

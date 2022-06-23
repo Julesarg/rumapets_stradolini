@@ -1,22 +1,38 @@
 .item-list-container_item {
-  @include sizes(250px, fit-content);
+  @include sizes(200px, fit-content);
   @include display(flex, column);
-  justify-content: space-between;
-  align-items: center;
+  .item-list-container_item_title {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    font-size: 0.9rem;
+
+    text-align: left;
+    margin-bottom: 5px;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(224, 155, 163, 0.5);
+    h3 {
+      color: rgb(236, 134, 146, 0.9);
+      text-shadow: 1px 1px 0px rgba(255, 255, 255);
+    }
+  }
   .item-list-container_item_img {
     display: flex;
     position: relative;
     z-index: 1;
     width: 100%;
     height: auto;
-    border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     transition-duration: 0.2s;
     img {
       display: block;
       width: 100%;
       height: auto;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
     }
   }
   .item-list-container_item_img_overlay {
@@ -25,10 +41,12 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
     width: 0;
     height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     transition: 0.5s ease;
     .item-list-container_item_img_overlay_textBox {
       @include sizes(100%, 100%);
@@ -41,13 +59,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 33%;
+        width: 40%;
         height: auto;
         border-bottom-right-radius: 15px;
-        background-color: rgba(0, 158, 255, 0.6);
+        background-color: rgba(0, 158, 255, 0.8);
         p {
-          font-size: 0.95rem;
+          font-size: 0.8rem;
+          font-weight: 600;
           padding: 2px 0px 5px 0px;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
         }
       }
       .item-list-container_item_img_overlay_textBox_properties {
@@ -55,10 +75,14 @@
         @include sizes(100%, 45%);
         justify-content: center;
         align-items: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        p {
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.9);
+        }
       }
       .item-list-container_item_img_overlay_textBox_prices {
         @include display(flex, column);
-        background-color: rgba(0, 102, 255, 0.6);
         justify-content: space-between;
         width: 100%;
         height: auto;
@@ -66,7 +90,7 @@
         margin-bottom: 10px;
         font-size: 1rem;
         padding: 2%;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.6);
         .item-list-container_item_img_overlay_textBox_prices_list {
           @include display(flex, row);
           justify-content: space-between;
@@ -79,31 +103,32 @@
           justify-content: space-between;
           align-items: center;
           p {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
           }
         }
       }
       button {
-        align-self: flex-end;
-        background-color: rgba(0, 158, 255, 0.6);
+        align-self: center;
+        background-color: rgba(0, 60, 255, 0.6);
         border-style: none;
         width: 50%;
         height: auto;
-        margin-top: 15px;
-        margin-right: 10%;
+        margin-top: 10px;
+        margin-bottom: 10px;
         padding: 5px;
-        border-radius: 15px;
+        border-radius: 10px;
         transition: all 0.3s ease-in-out;
         a {
           text-decoration: none;
-          color: white;
-          font-size: 0.9rem;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: rgba(255, 255, 255);
+          font-size: 0.85rem;
           font-weight: 700;
         }
       }
       button:hover {
         width: 100%;
-        background-color: rgba(255, 0, 64, 0.452);
+        background-color: rgba(255, 81, 0, 0.452);
         margin-right: 0;
         border-radius: 0;
       }
@@ -111,17 +136,5 @@
   }
   .item-list-container_item_img:hover .item-list-container_item_img_overlay {
     width: 100%;
-  }
-  .item-list-container_item_title {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    font-size: 0.9rem;
-    color: #ec8692;
-    text-align: left;
-    margin-bottom: 5px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-bottom-color: #e09ba3;
   }
 }

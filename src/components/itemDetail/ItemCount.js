@@ -12,23 +12,23 @@ const ItemCount = (props) => {
     <div className="control-container">
       <div className="control-container-amount">
         <button onClick={lessItem} className="control-container-button">
-          <p className="control-container-button-text">-</p>
+          <span className="control-container-button-text">-</span>
         </button>
         <div className="control-container-number">
           <p>{stock}</p>
         </div>
         <button onClick={moreItem} className="control-container-button">
-          <p className="control-container-button-text">+</p>
+          <span className="control-container-button-text">+</span>
         </button>
       </div>
-      <div
+      <button
         onClick={() => {
           props.onAdd(stock);
         }}
         className="control-container-purchase"
       >
-        <p className="control-container-purchase-text">ADD TO CART</p>
-      </div>
+        <span className="control-container-purchase-text">ADD TO CART</span>
+      </button>
     </div>    
   );
 };

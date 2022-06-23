@@ -7,6 +7,7 @@ const ItemList = (props) => {
   return (
     <>
       <Categories />
+      <div className="item-list">
       <div className="item-list-container animate__animated animate__fadeIn">
         {props.items.length > 0 ? (
           props.items.map((item) => (
@@ -38,6 +39,7 @@ const ItemList = (props) => {
         ) : (
           <Loader />
         )}
+      </div>
       </div>
     </>
   );

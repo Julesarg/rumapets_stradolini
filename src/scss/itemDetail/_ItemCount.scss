@@ -1,24 +1,30 @@
-.control-container {
+.item-detail-container_right-addButton {
+  @include sizes(100%, 6%);
+  @include display(flex, row);
+
+  .control-container {
     @include sizes(100%, auto);
     @include display(flex, row);
     justify-content: flex-end;
+    align-items: center;
     .control-container-amount {
-      @include sizes(60%, auto);
+      @include sizes(60%, 100%);
       @include display(flex, row);
       justify-content: flex-end;
+      align-items: center;
       margin-right: 10%;
       .control-container-button {
         @include sizes(30px, 80%);
-        justify-content: center;
-        align-items: center;
         border-radius: 100%;
         border-style: none;
         background-color: #002aff;
         transition: 0.1s ease-in-out;
         cursor: pointer;
-        p {
+        .control-container-button-text {
           color: white;
-          font-size: 1.2rem;
+          font-size: 1.5rem;
+          height: fit-content;
+          width: fit-content;
         }
       }
       .control-container-button:active {
@@ -31,6 +37,8 @@
         p {
           font-size: 1.1rem;
           font-weight: 500;
+          height: fit-content;
+          width: fit-content;
         }
       }
     }
@@ -41,11 +49,18 @@
       align-items: center;
       background-color: #002aff;
       border-radius: 10px;
+      border-style: none;
       cursor: pointer;
       .control-container-purchase-text {
         color: white;
         font-size: 0.8rem;
         font-weight: 700;
+        width: fit-content;
+        height: fit-content;
       }
     }
+    .control-container-purchase:hover {
+      background-color: #001ba1;
+    }
   }
+}

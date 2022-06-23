@@ -1,6 +1,6 @@
 .categories-container {
   @include display(flex, row);
-  width: 100%;
+  @include sizes(100%, 27px);
   margin-top: 120px;
   justify-content: center;
   border-bottom-style: solid;
@@ -11,7 +11,6 @@
     text-decoration: none;
     width: 5%;
     display: flex;
-    font-size: 0.9rem;
     font-weight: 500;
     color: white;
     .categories-container_small,
@@ -39,6 +38,13 @@
       font-weight: 700;
       border-inline-style: solid;
       border-inline-width: 1px;
+    }
+    button{
+      p{
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+      }
     }
   }
 }

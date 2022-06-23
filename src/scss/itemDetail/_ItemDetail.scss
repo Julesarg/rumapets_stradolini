@@ -1,7 +1,7 @@
 .item-detail-general {
-    @include sizes(100%, 100%);
-    @include display(flex, row);
-    margin-top: 150px;
+    @include sizes(100%, fit-content);
+    @include display(flex, row);    
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    background-color:rgba(0,0,0,0.1);
   }

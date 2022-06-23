@@ -1,7 +1,19 @@
+.cart-container-checkout {
+  @include display(flex, column);
+  @include sizes(45%, fit-content);
+  align-items: center;
+  position: relative;
+  margin-top: 8%;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  outline: 0;
+
 .cart-container-checkout_title {
   @include sizes(100%, 55px);
   @include display(flex, row);
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-bottom: 10px;
   border-bottom: 1px solid #dee2e6;
@@ -12,6 +24,7 @@
     font-weight: 600;
     color: grey;
     padding-left: 20px;
+    height: fit-content;
   }
 }
 .cart-container-checkout_texts_container {
@@ -35,4 +48,5 @@
     color: rgba(0, 0, 0, 0.55);
     padding-left: 20px;
   }
+}
 }

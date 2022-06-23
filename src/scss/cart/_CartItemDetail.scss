@@ -1,3 +1,13 @@
+.cart-container-inner_body {
+  @include display(flex, column);
+  width: 90%;
+  height: fit-content;
+  margin-top: 20px;
+  .cart-container-inner_body_bottom{
+    display: flex;
+    flex-direction: row;
+  }
+
 .cart-container-inner_body_product {
   display: flex;
   flex-direction: row;
@@ -129,4 +139,5 @@
       }
     }
   }
+}
 }

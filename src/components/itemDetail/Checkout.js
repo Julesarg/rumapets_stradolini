@@ -2,7 +2,7 @@ const Checkout = () => {
   return (
     <>
       <button className="control-container-checkout">
-        <p className="control-container-checkout-text">CHECKOUT TO CART NOW</p>
+        <span className="control-container-checkout-text">CHECKOUT TO CART NOW</span>
       </button>
     </>
   );

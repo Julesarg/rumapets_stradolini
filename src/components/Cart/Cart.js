@@ -4,6 +4,7 @@ import { CartContext } from "./CartContext";
 import CartEmpty from "./CartEmpty";
 import CartItemDetail from "./CartItemDetail";
 import CartDeleteAllButton from "./CartDeleteAllButton";
+import CartBackToHome from "./CartBackToHome";
 import CartCheckout from "./CartCheckout";
 import {
   serverTimestamp,
@@ -77,7 +78,10 @@ const Cart = () => {
             ) : (
               <>
                 <CartItemDetail />
+                <div className="cart-container-inner_body_bottom">
                 <CartDeleteAllButton />
+                <CartBackToHome />
+                </div>
               </>
             )}
           </div>
@@ -105,6 +109,7 @@ const Cart = () => {
           </div>
         )}
       </div>
+      <div className="empty_container"></div>
     </>
   );
 };
