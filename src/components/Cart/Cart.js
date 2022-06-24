@@ -6,6 +6,7 @@ import CartItemDetail from "./CartItemDetail";
 import CartDeleteAllButton from "./CartDeleteAllButton";
 import CartBackToHome from "./CartBackToHome";
 import CartCheckout from "./CartCheckout";
+
 import {
   serverTimestamp,
   doc,
@@ -28,6 +29,7 @@ const Cart = () => {
     }));
 
     let pedido = {
+      
       buyer: {
         email: "test@gmail.com",
         name: "Jane Doe",
@@ -37,7 +39,6 @@ const Cart = () => {
       total: test.calcTotal(),
       items: arrayForDB,
     };
-
     const createOrderInFirestore = async () => {
       const newOrderRef = doc(collection(db, "orders"));
       await setDoc(newOrderRef, pedido);
@@ -89,6 +90,7 @@ const Cart = () => {
         {test.cartList.length === 0 ? (
           <></>
         ) : (
+          <>
           <div className="cart-container-checkout">
             <CartCheckout
               products={test.calcItemsPriceTotal()}
@@ -96,17 +98,17 @@ const Cart = () => {
               discount={test.calcDiscount()}
               total={test.calcTotal()}
             />
-
             <div className="deleteButton-container">
-              <button
+            <button
                 onClick={crearOrden}
                 className="deleteButton-container-button two"
               >
                 <div className="insider"></div>
-                Hacer Pedido
-              </button>
+                Finalizar Compra
+              </button>          
             </div>
           </div>
+          </>
         )}
       </div>
       <div className="empty_container"></div>

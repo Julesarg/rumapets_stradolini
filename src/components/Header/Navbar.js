@@ -3,6 +3,7 @@ import NavbarToggle from "./NavbarToggle";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
 
+//pdte responsive toggle
 const Navbar = () => {
   return (
     <section className="navegacion">

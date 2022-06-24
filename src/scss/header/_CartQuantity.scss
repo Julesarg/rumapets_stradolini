@@ -1,15 +1,26 @@
 .imgCartCounter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   bottom: 13px;
   right: 8px;
-  @include sizes(16px, 40%);
+  @include sizes(18px, 18px);
   border-radius: 100%;
   background-color: #c95663;
-  color: white;
-  font-weight: 500;
+  p {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: white;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 13px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 .imgCartCounterEmpty {
   display: flex;

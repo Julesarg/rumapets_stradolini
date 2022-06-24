@@ -136,17 +136,28 @@
 }
 .imgCartCounter {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: center;
   position: relative;
   bottom: 13px;
   right: 8px;
-  width: 16px;
-  height: 40%;
+  width: 18px;
+  height: 18px;
   border-radius: 100%;
   background-color: #c95663;
+}
+.imgCartCounter p {
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   color: white;
+  opacity: 1;
   font-weight: 500;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .imgCartCounterEmpty {
@@ -367,7 +378,7 @@
   height: fit-content;
   align-items: center;
   margin-top: 8%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-bottom: 20px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -484,6 +495,8 @@
 }
 
 .deleteButton-container .deleteButton-container-button {
+  width: fit-content;
+  height: fit-content;
   outline: none;
   border-style: none;
   border-radius: 10px;
@@ -1032,9 +1045,13 @@ a .control-container-checkout:hover {
 .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle .item-detail-container_right-imgTitle_close:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle img {
-  height: 50%;
-  width: fit-content;
+.item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle div {
+  width: 100%;
+  height: 75%;
+}
+.item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle div img {
+  height: 100%;
+  width: auto;
   align-self: center;
 }
 .item-list-container-bis .item-detail-container .item-detail-container_right h4 {
@@ -1359,7 +1376,7 @@ a .control-container-checkout:hover {
 .item-list-container_item .item-list-container_item_img {
   display: flex;
   position: relative;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
   height: auto;
   border-top-right-radius: 10px;
@@ -1498,6 +1515,7 @@ footer .cajaGde {
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
+  padding-top: 5px;
 }
 footer .cajaGde .cajaIzq {
   display: flex;
@@ -1509,14 +1527,15 @@ footer .cajaGde .cajaIzq {
 footer .cajaGde .cajaIzq .cajaLinks {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding-bottom: 1%;
+  width: 50%;
 }
 footer .cajaGde .cajaIzq .cajaLinks .linksDeInteresTitulo {
   color: white;
   font-weight: 700;
 }
 footer .cajaGde .cajaIzq .cajaLinks .linksDeInteresTexto {
+  width: fit-content;
   text-decoration: none;
   color: white;
   opacity: 0.8;
@@ -1524,18 +1543,20 @@ footer .cajaGde .cajaIzq .cajaLinks .linksDeInteresTexto {
   border-bottom-width: 100%;
   border-width: 1px;
   border-bottom-color: transparent;
-  transition: 0.2s;
+  transition: 0.2s all ease-in-out;
+  justify-content: flex-start;
 }
 footer .cajaGde .cajaIzq .cajaLinks .linksDeInteresTexto:hover {
   color: white;
   opacity: 0.9;
-  border-bottom-color: white;
+  border-bottom-color: rgba(255, 255, 255, 0.8);
   border-bottom-style: solid;
+  padding-right: 20px;
 }
 footer .cajaGde .cajaIzq .cajaHorario {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-start;
   padding-left: 10px;
   padding-bottom: 1%;
@@ -1543,10 +1564,15 @@ footer .cajaGde .cajaIzq .cajaHorario {
 footer .cajaGde .cajaIzq .cajaHorario .horarioTitulo {
   color: white;
   font-weight: 700;
+  height: fit-content;
 }
 footer .cajaGde .cajaIzq .cajaHorario .horarioTexto {
+  width: fit-content;
+  height: fit-content;
+  text-decoration: none;
   color: white;
   opacity: 0.8;
+  justify-content: flex-start;
 }
 footer .cajaGde .cajaCentro {
   display: flex;
@@ -1563,10 +1589,13 @@ footer .cajaGde .cajaCentro {
 }
 footer .cajaGde .cajaCentro .cajaEncontranos {
   text-align: center;
+  justify-content: flex-end;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: 700;
   padding-bottom: 2%;
+}
+footer .cajaGde .cajaCentro .cajaEncontranos p {
+  height: fit-content;
 }
 footer .cajaGde .cajaCentro .cajaRedes {
   display: flex;
@@ -1574,7 +1603,11 @@ footer .cajaGde .cajaCentro .cajaRedes {
   justify-content: center;
   align-items: center;
 }
-footer .cajaGde .cajaCentro .cajaRedes a .footerImgRedes {
+footer .cajaGde .cajaCentro .cajaRedes a {
+  width: fit-content;
+  cursor: pointer;
+}
+footer .cajaGde .cajaCentro .cajaRedes a .svg-inline--fa {
   display: flex;
   width: 40px;
   height: 40px;
@@ -1582,7 +1615,10 @@ footer .cajaGde .cajaCentro .cajaRedes a .footerImgRedes {
   margin-right: 5px;
   opacity: 0.8;
 }
-footer .cajaGde .cajaCentro .cajaRedes a .footerImgRedes:hover {
+footer .cajaGde .cajaCentro .cajaRedes a .svg-inline--fa path {
+  fill: white;
+}
+footer .cajaGde .cajaCentro .cajaRedes a .svg-inline--fa:hover {
   opacity: 1;
   transform: scale(1.2, 1.2);
 }
@@ -1604,7 +1640,6 @@ footer .cajaGde .cajaCentro .cajaDatos .cajasIndividuales .textoContacto {
   display: flex;
   color: white;
   font-size: 0.95rem;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: oblique;
   padding-left: 3px;
@@ -1621,45 +1656,106 @@ footer .cajaGde .cajaDer {
 footer .cajaGde .cajaDer .tuMensaje {
   text-align: right;
   color: white;
-  font-family: "Poppins", sans-serif;
   opacity: 0.9;
+  justify-content: flex-end;
+}
+footer .cajaGde .cajaDer .tuMensaje p {
+  height: fit-content;
 }
 footer .cajaGde .cajaDer .cajaGato {
   display: flex;
-  position: relative;
+  justify-content: center;
+  align-items: flex-end;
 }
-footer .cajaGde .cajaDer .cajaGato a .gatoImagen2 {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
+footer .cajaGde .cajaDer .cajaGato a {
+  width: 50px;
+  height: 50px;
+}
+footer .cajaGde .cajaDer .cajaGato a .svg-inline--fa {
   width: 100%;
-  opacity: 0;
-  transition: 0.6s ease;
+  height: 100%;
 }
-footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
+footer .cajaGde .cajaDer .cajaGato a .svg-inline--fa path {
+  fill: white;
+  opacity: 0.8;
+  transition: 0.3s all ease-in-out;
+}
+footer .cajaGde .cajaDer .cajaGato a .svg-inline--fa path:hover {
   opacity: 1;
 }
 
 .contenedorCopyRight {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  justify-content: center;
   background-color: #532327;
   text-decoration: none;
   width: 100%;
-  height: 24px;
-  padding-right: 2%;
+  height: 20px;
+  padding-right: 20px;
 }
 .contenedorCopyRight .copyRight {
-  opacity: 0.6;
-  font-family: "Cabin", sans-serif;
-  font-weight: lighter;
   display: inline-block;
   color: white;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  height: fit-content;
+}
+
+.modal-backdrop {
+  height: 0px !important;
+}
+
+.modal {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex !important;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  outline: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.modal .modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: none;
+  max-width: 500px;
+  position: relative;
+  width: 800px;
+  height: 500px;
+  pointer-events: none;
+  margin: 0px !important;
+}
+.modal .modal-dialog .modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+  width: 500px;
+  height: 500px;
+}
+.modal .modal-dialog .modal-content .modal-header {
+  width: 100%;
+  height: 25%;
+}
+.modal .modal-dialog .modal-content .modal-body {
+  width: 100%;
+  height: 50%;
+}
+.modal .modal-dialog .modal-content .modal-footer {
+  width: 100%;
+  height: 25%;
 }
 
 * {
@@ -1671,7 +1767,6 @@ footer .cajaGde .cajaDer .cajaGato:hover .gatoImagen2 {
 
 body {
   font-family: "Inter", sans-serif;
-  display: flex;
   background-image: url(../../public/imgs/general/background.png);
   width: 100%;
   height: 100%;

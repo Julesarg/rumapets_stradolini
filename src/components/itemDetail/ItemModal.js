@@ -39,7 +39,9 @@ const ItemModal = (item) => {
             <div className="item-detail-container_right-imgTitle_close">
               <Link to="../">X</Link>
             </div>
+            <div>
             <img src={item.model_image} alt="model Icon logo" />
+            </div>
           </div>
           <h4>Propiedades y caracteristicas</h4>
           <div className="item-detail-container_right-properties">
