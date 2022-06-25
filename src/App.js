@@ -1,6 +1,6 @@
 import "./css/App.css";
 import React from "react";
-import Header from "./components/header/Header";
+import Header from "./components/navbar/Header";
 import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
