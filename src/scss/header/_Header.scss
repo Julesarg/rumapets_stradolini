@@ -1,8 +1,7 @@
 .fixedTop {
+  @include sizes(100%,60px);
   position: fixed;
   z-index: 9999;
-  width: 100%;
-  height: 60px;
   top: 0;
   left: 0;
   .headerBox {

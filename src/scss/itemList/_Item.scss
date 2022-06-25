@@ -6,7 +6,6 @@
     align-items: flex-start;
     width: 100%;
     font-size: 0.9rem;
-
     text-align: left;
     margin-bottom: 5px;
     border-bottom-style: solid;
@@ -18,19 +17,17 @@
     }
   }
   .item-list-container_item_img {
+    @include sizes(100%,auto);
     display: flex;
     position: relative;
     z-index: 1000;
-    width: 100%;
-    height: auto;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
     transition-duration: 0.2s;
     img {
+      @include sizes(100%,auto);
       display: block;
-      width: 100%;
-      height: auto;
       border-top-right-radius: 10px;
       border-bottom-right-radius: 10px;
     }
@@ -83,9 +80,8 @@
       }
       .item-list-container_item_img_overlay_textBox_prices {
         @include display(flex, column);
+        @include sizes(100%,auto);
         justify-content: space-between;
-        width: 100%;
-        height: auto;
         font-weight: 500;
         margin-bottom: 10px;
         font-size: 1rem;

@@ -1,9 +1,8 @@
 .cart-container {
   @include display(flex, row);
+  @include sizes(100%,fit-content);
   justify-content: space-around;
   align-items: flex-start;
-  width: 100%;
-  height: fit-content;
   background-color: rgba(0, 0, 0, 0.2);
   .cart-container-inner {
     @include display(flex, column);
@@ -59,7 +58,6 @@
   }
 }
 .empty_container {
-  width: 100%;
-  height: 100%;
+  @include sizes(100%,100%);
   background-color: rgba(0, 0, 0, 0.2);
 }

@@ -6,7 +6,8 @@ import CartItemDetail from "./CartItemDetail";
 import CartDeleteAllButton from "./CartDeleteAllButton";
 import CartBackToHome from "./CartBackToHome";
 import CartCheckout from "./CartCheckout";
-
+import ToastOrderLoading from "../../utilities/ToastOrderLoading";
+import ToastOrderLoadingOk from "../../utilities/ToastOrderLoadingOk";
 import {
   serverTimestamp,
   doc,
@@ -29,7 +30,6 @@ const Cart = () => {
     }));
 
     let pedido = {
-      
       buyer: {
         email: "test@gmail.com",
         name: "Jane Doe",
@@ -46,8 +46,11 @@ const Cart = () => {
     };
     createOrderInFirestore()
       .then((result) =>
-        alert("Pedido realizado! Tu codigo de compra es" + result.id)
+        setTimeout(() => {
+          ToastOrderLoadingOk(result.id);
+        }, 3000)
       )
+      .then(() => ToastOrderLoading())
       .catch((err) => console.log(err));
 
     test.cartList.forEach(async (item) => {
@@ -80,8 +83,8 @@ const Cart = () => {
               <>
                 <CartItemDetail />
                 <div className="cart-container-inner_body_bottom">
-                <CartDeleteAllButton />
-                <CartBackToHome />
+                  <CartDeleteAllButton />
+                  <CartBackToHome />
                 </div>
               </>
             )}
@@ -91,23 +94,23 @@ const Cart = () => {
           <></>
         ) : (
           <>
-          <div className="cart-container-checkout">
-            <CartCheckout
-              products={test.calcItemsPriceTotal()}
-              taxes={test.calcTaxes()}
-              discount={test.calcDiscount()}
-              total={test.calcTotal()}
-            />
-            <div className="deleteButton-container">
-            <button
-                onClick={crearOrden}
-                className="deleteButton-container-button two"
-              >
-                <div className="insider"></div>
-                Finalizar Compra
-              </button>          
+            <div className="cart-container-checkout">
+              <CartCheckout
+                products={test.calcItemsPriceTotal()}
+                taxes={test.calcTaxes()}
+                discount={test.calcDiscount()}
+                total={test.calcTotal()}
+              />
+              <div className="deleteButton-container">
+                <button
+                  onClick={crearOrden}
+                  className="deleteButton-container-button two"
+                >
+                  <div className="insider"></div>
+                  Finalizar Compra
+                </button>
+              </div>
             </div>
-          </div>
           </>
         )}
       </div>

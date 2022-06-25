@@ -24,8 +24,7 @@
     color: rgba(0, 0, 0, 0.6);
     .insider {
       background-color: #fff;
-      width: 100%;
-      height: 20px;
+      @include sizes(100%,20px);
       position: absolute;
       left: -135px;
       @include transform(rotateZ(45deg));
@@ -46,8 +45,7 @@
     color: rgba(0, 0, 0, 0.6);
     .insider {
       background-color: #fff;
-      width: 100%;
-      height: 20px;
+      @include sizes(100%,20px);
       position: absolute;
       left: -135px;
       @include transform(rotateZ(45deg));

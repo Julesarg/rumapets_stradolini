@@ -75,9 +75,8 @@
     border-bottom-width: 8px;
     border-bottom-color: white;
     .container-logo-reduced {
+      @include sizes(100%,110px);
       display: flex;
-      height: 110px;
-      width: 100%;
       align-items: center;
       justify-content: center;
       position: relative;

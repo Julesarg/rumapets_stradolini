@@ -30,13 +30,13 @@ const Footer = () => {
               <Link to="./" className="linksDeInteresTexto">
                 Productos
               </Link>
-              <a href="/#" className="linksDeInteresTexto">
+              <a className="linksDeInteresTexto">
                 Materiales
               </a>
-              <a href="/#" className="linksDeInteresTexto">
+              <a className="linksDeInteresTexto">
                 Adopciones
               </a>
-              <a href="/#" className="linksDeInteresTexto">
+              <a className="linksDeInteresTexto">
                 Faq
               </a>
             </div>

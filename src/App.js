@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Cart from "./components/cart/Cart";
 import CartContextProvider from "./components/cart/CartContext";
 import Footer from "./components/footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -14,6 +15,8 @@ const App = () => {
       <CartContextProvider>
         <BrowserRouter>
           <Header />
+          <Toaster toastOptions={{ duration: 5000 }} position="bottom-center"
+  />
           <Routes>
             <Route path="/" element={<ItemListContainer />} />
             <Route path="/category/:id" element={<ItemListContainer />} />
