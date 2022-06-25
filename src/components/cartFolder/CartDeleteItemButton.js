@@ -1,4 +1,4 @@
-import { CartContext } from "../cart/CartContext";
+import { CartContext } from "./CartContext";
 import React, { useContext } from "react";
 
 const CartDeleteItemButton = ({ item }) => {

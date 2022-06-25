@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemDetail from "../components/itemDetail/ItemDetail";
+import ItemDetail from "../components/itemDetailFolder/ItemDetail";
 import { firestoreFetchDetail } from "../utilities/firestoreFetch";
 
 const ItemDetailContainer = () => {

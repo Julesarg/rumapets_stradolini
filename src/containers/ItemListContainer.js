@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemList from "../components/itemList/ItemList";
+import ItemList from "../components/itemListFolder/ItemList";
 import { firestoreFetch } from "../utilities/firestoreFetch";
 
 const ItemListContainer = () => {
