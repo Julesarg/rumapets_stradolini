@@ -5,10 +5,10 @@
 
 # Indice
 * [Sobre el proyecto](#sobre-el-proyecto)
-* [Main Knowledge & Skills](#main-knowledge--skills)
-* [External-Resources/Dependencies](#external-resourcesdependencies)
+* [Main Knowledge & Skills](#hammer_and_wrenchmain-knowledge--skills)
+* [External-Resources and Dependencies](#linkexternal-resources-and-dependencies)
 * [Deployment](#deployment)
-* [About Me](#about-me)
+* [About Me](#rocketabout-me)
 * [Authors](#authors)
 
 
@@ -19,7 +19,7 @@ Single Page project para cursada de Fullstack Developer en [Coderhouse](https://
 </p>
 
 
-## 🛠 Main Knowledge & Skills
+## :hammer_and_wrench:Main Knowledge & Skills
 
 `
 HTML
@@ -59,7 +59,7 @@ SEO
 `
 
 
-## 🔗 External Resources/Dependencies
+## :link:External Resources and Dependencies
 [![Firebase](https://img.shields.io/badge/fonts-GOOGLE%20FONTS-important)](https://fonts.google.com/)
 [![Fontawesome](https://img.shields.io/badge/icons-FONTAWESOME-blue)](https://fontawesome.com/)
 [![Sass](https://img.shields.io/badge/styleCompile-SASS-ff69b4)](https://sass-lang.com/)
@@ -74,7 +74,7 @@ SEO
 ## Deployment
 Realizado en Netlify para acceso directo https://meek-bubblegum-7301df.netlify.app/ :point_left: :point_left: (accede desde aqui)
 
-## 🚀 About Me
+## :rocket:About Me
 Estudiante de carrera de FullStack Developer en CoderHouse, emprendedor y trabajador. De Buenos Aires, Argentina. Adquiriendo conocimientos con ansias de incursionar en el mundo IT.
 
 ### Authors
