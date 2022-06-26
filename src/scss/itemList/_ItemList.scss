@@ -3,10 +3,9 @@
   @include sizes(100%,fit-content);
   align-items: center;
 .item-list-container {
+  @include sizes(60%,100%);
   justify-items: center;
   align-items: flex-start;
-  width: 60%;
-  height: 100%;
   margin-bottom: 30px;
   margin-top: 30px;
   display: grid;

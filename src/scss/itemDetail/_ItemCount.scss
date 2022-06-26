@@ -21,10 +21,9 @@
         transition: 0.1s ease-in-out;
         cursor: pointer;
         .control-container-button-text {
+          @include sizes(fit-content,fit-content);
           color: white;
           font-size: 1.5rem;
-          height: fit-content;
-          width: fit-content;
         }
       }
       .control-container-button:active {
@@ -35,10 +34,9 @@
         justify-content: center;
         align-items: center;
         p {
+          @include sizes(fit-content,fit-content);
           font-size: 1.1rem;
           font-weight: 500;
-          height: fit-content;
-          width: fit-content;
         }
       }
     }
@@ -52,11 +50,10 @@
       border-style: none;
       cursor: pointer;
       .control-container-purchase-text {
+        @include sizes(fit-content,fit-content);
         color: white;
         font-size: 0.8rem;
         font-weight: 700;
-        width: fit-content;
-        height: fit-content;
       }
     }
     .control-container-purchase:hover {

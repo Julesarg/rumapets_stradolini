@@ -8,8 +8,7 @@
     .toggle {
       display: none;
       img {
-        height: 20px;
-        width: 20px;
+        @include sizes(20px,20px);
       }
     }
     .nav-menu {
@@ -82,16 +81,14 @@
       position: relative;
       bottom: 70px;
       img {
-        height: 90px;
-        width: auto;
+        @include sizes(auto,90px);
         z-index: 1000;
       }
     }
     .toggle {
       display: flex;
+      @include sizes(10%,27px);
       align-items: center;
-      width: 10%;
-      height: 27px;
       padding-left: 10px;
       background-color: transparent;
       border-style: none;

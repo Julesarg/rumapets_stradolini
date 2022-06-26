@@ -1,15 +1,13 @@
 .lds-ellipsis {
+  @include sizes(80px,80px);
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
   transition: all 2s ease-in-out;
 }
 .lds-ellipsis div {
+  @include sizes(13px,13px);
   position: absolute;
   top: 33px;
-  width: 13px;
-  height: 13px;
   border-radius: 50%;
   background: #d9737f;
   transition: all 2s ease-in-out;

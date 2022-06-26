@@ -1,7 +1,6 @@
 .cart-container-inner_body {
   @include display(flex, column);
-  width: 90%;
-  height: fit-content;
+  @include sizes(90%,fit-content);
   margin-top: 20px;
   .cart-container-inner_body_bottom{
     display: flex;
@@ -27,8 +26,7 @@
     display: flex;
     width: 20%;
     img {
-      width: 90px;
-      height: 90px;
+      @include sizes(90px,90px);
       box-shadow: 2px 2px 1px rgb(0 0 0 / 20%);
       margin-top: 20px;
       margin-bottom: 20px;
@@ -36,8 +34,7 @@
   }
   .cart-container-inner_body_product_title {
     display: flex;
-    width: 20%;
-    height: 90%;
+    @include sizes(20%,90%);
     justify-content: center;
     align-items: center;
     .cart-container-inner_body_product_title_texts {
@@ -62,8 +59,7 @@
   }
   .cart-container-inner_body_product_price {
     display: flex;
-    width: 20%;
-    height: 90%;
+    @include sizes(20%,90%);
     justify-content: center;
     align-items: center;
     .cart-container-inner_body_product_price_texts {
@@ -88,8 +84,7 @@
   }
   .cart-container-inner_body_product_quantity {
     @include display(flex, column);
-    width: 20%;
-    height: 90%;
+    @include sizes(20%,90%);
     p {
       font-size: 0.8rem;
       color: #c95663;
@@ -109,14 +104,13 @@
         align-items: center;
         height: auto;
         button {
+          @include sizes(20px,20px);
           display: flex;
           justify-content: center;
           align-items: center;
           border-style: none;
-          width: 20px;
           margin-left: 10px;
           margin-right: 10px;
-          height: 20px;
           background-color: transparent;
           border-width: 0.5px;
           border-color: rgba(0, 0, 0, 0.3);

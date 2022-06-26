@@ -4,8 +4,7 @@
     align-items: center;
     width: 14.28%;
     img {
-      height: 110px;
-      width: auto;
+      @include sizes(auto,110px);
       position: relative;
       top: 3px;
     }

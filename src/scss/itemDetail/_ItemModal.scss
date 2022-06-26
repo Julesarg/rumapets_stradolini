@@ -49,8 +49,7 @@
         div {
           @include sizes(100%,75%);
           img {
-            height: 100%;
-            width: auto;
+            @include sizes(auto,100%);
             align-self: center;
           }
         }
@@ -165,8 +164,7 @@
   flex-direction: column !important;
   justify-content: flex-end !important;
   .swal2-popup {
-    height: 120px !important;
-    width: 20% !important;
+    @include sizes(20% !important,120px !important);
     display: flex !important;
     flex-direction: row;
     justify-content: space-around;
@@ -177,17 +175,15 @@
       display: none !important;
     }
     .swal2-image {
+      @include sizes(100px,100px);
       margin: 0px;
       padding: 10px;
-      width: 100px;
-      height: 100px;
       box-shadow: 1px 1px 5px 2px rgb(0 0 0 / 30%);
     }
     .swal2-title {
-      width: 60%;
+      @include sizes(60%,fit-content);
       padding: 0px;
       font-size: 1.2rem;
-      height: fit-content;
     }
   }
 }

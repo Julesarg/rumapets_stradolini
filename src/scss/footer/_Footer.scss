@@ -58,8 +58,7 @@ footer {
           height: fit-content;
         }
         .horarioTexto {
-          width: fit-content;
-          height: fit-content;
+          @include sizes(fit-content,fit-content);
           text-decoration: none;
           color: white;
           opacity: 0.8;
@@ -68,9 +67,9 @@ footer {
       }
     }
     .cajaCentro {
+      @include sizes(33%,150px);
       display: flex;
       justify-content: center;
-      height: 150px;
       flex-direction: column;
       align-items: center;
       border-left: solid;
@@ -78,7 +77,6 @@ footer {
       border-right-color: white;
       border-left-color: white;
       border-width: 1px;
-      width: 33%;
       .cajaEncontranos {
         text-align: center;
         justify-content: flex-end;
@@ -159,8 +157,7 @@ footer {
         justify-content: center;
         align-items: flex-end;
         a {
-          width: 50px;
-          height: 50px;
+          @include sizes(50px,50px);
           .svg-inline--fa {
             @include sizes(100%,100%);
             path {

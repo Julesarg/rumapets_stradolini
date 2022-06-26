@@ -6,6 +6,8 @@
   a {
     justify-content: flex-end;
     text-decoration: none;
+    width: 50px;
+    margin-right: 10px;
     .headerBox_right-img-container {
       @include sizes(fit-content, 40px);
       display: flex;

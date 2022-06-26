@@ -35,13 +35,12 @@
   .item-list-container_item_img_overlay {
     position: absolute;
     @include display(flex, column);
+    @include sizes(0,100%);
     bottom: 0;
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    width: 0;
-    height: 100%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     transition: 0.5s ease;
@@ -54,10 +53,9 @@
       color: white;
       .item-list-container_item_img_overlay_textBox_type {
         display: flex;
+        @include sizes(40%,auto);
         justify-content: center;
         align-items: center;
-        width: 40%;
-        height: auto;
         border-bottom-right-radius: 15px;
         background-color: rgba(0, 158, 255, 0.8);
         p {
@@ -107,8 +105,7 @@
         align-self: center;
         background-color: rgba(0, 60, 255, 0.6);
         border-style: none;
-        width: 50%;
-        height: auto;
+        @include sizes(50%,auto);
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 5px;

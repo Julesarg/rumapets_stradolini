@@ -1,7 +1,6 @@
 .deleteButton-container {
   .deleteButton-container-button {
-    width: fit-content;
-    height: fit-content;
+    @include sizes(fit-content,fit-content);
     outline: none;
     border-style: none;
     border-radius: 10px;

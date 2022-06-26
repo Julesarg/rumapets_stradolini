@@ -68,6 +68,8 @@
 .headerBox_right a {
   justify-content: flex-end;
   text-decoration: none;
+  width: 50px;
+  margin-right: 10px;
 }
 .headerBox_right a .headerBox_right-img-container {
   width: fit-content;
@@ -203,8 +205,8 @@
   display: none;
 }
 .navegacion .nav .toggle img {
-  height: 20px;
   width: 20px;
+  height: 20px;
 }
 .navegacion .nav .nav-menu {
   list-style: none;
@@ -281,15 +283,15 @@
     bottom: 70px;
   }
   body div .fixedTop .navegacion .nav .container-logo-reduced img {
-    height: 90px;
     width: auto;
+    height: 90px;
     z-index: 1000;
   }
   body div .fixedTop .navegacion .nav .toggle {
     display: flex;
-    align-items: center;
     width: 10%;
     height: 27px;
+    align-items: center;
     padding-left: 10px;
     background-color: transparent;
     border-style: none;
@@ -356,8 +358,8 @@
   width: 14.28%;
 }
 .nav-menu-img img {
-  height: 110px;
   width: auto;
+  height: 110px;
   position: relative;
   top: 3px;
 }
@@ -836,14 +838,14 @@
   height: auto;
 }
 .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_quantity .cart-container-inner_body_product_quantity_inner .cart-container-inner_body_product_quantity_buttons button {
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-style: none;
-  width: 20px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 20px;
   background-color: transparent;
   border-width: 0.5px;
   border-color: rgba(0, 0, 0, 0.3);
@@ -887,11 +889,11 @@ a .control-container-checkout {
   transition: 0.2s ease-in-out;
 }
 a .control-container-checkout .control-container-checkout-text {
+  width: fit-content;
+  height: fit-content;
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
-  width: fit-content;
-  height: fit-content;
 }
 a .control-container-checkout:hover {
   background-color: #002ec7;
@@ -930,10 +932,10 @@ a .control-container-checkout:hover {
   cursor: pointer;
 }
 .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button .control-container-button-text {
+  width: fit-content;
+  height: fit-content;
   color: white;
   font-size: 1.5rem;
-  height: fit-content;
-  width: fit-content;
 }
 .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button:active {
   background-color: #001ba1;
@@ -945,10 +947,10 @@ a .control-container-checkout:hover {
   align-items: center;
 }
 .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number p {
+  width: fit-content;
+  height: fit-content;
   font-size: 1.1rem;
   font-weight: 500;
-  height: fit-content;
-  width: fit-content;
 }
 .item-detail-container_right-addButton .control-container .control-container-purchase {
   width: 40%;
@@ -963,11 +965,11 @@ a .control-container-checkout:hover {
   cursor: pointer;
 }
 .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
+  width: fit-content;
+  height: fit-content;
   color: white;
   font-size: 0.8rem;
   font-weight: 700;
-  width: fit-content;
-  height: fit-content;
 }
 .item-detail-container_right-addButton .control-container .control-container-purchase:hover {
   background-color: #001ba1;
@@ -1050,8 +1052,8 @@ a .control-container-checkout:hover {
   height: 75%;
 }
 .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle div img {
-  height: 100%;
   width: auto;
+  height: 100%;
   align-self: center;
 }
 .item-list-container-bis .item-detail-container .item-detail-container_right h4 {
@@ -1175,8 +1177,8 @@ a .control-container-checkout:hover {
   justify-content: flex-end !important;
 }
 .swal2-container .swal2-popup {
-  height: 120px !important;
   width: 20% !important;
+  height: 120px !important;
   display: flex !important;
   flex-direction: row;
   justify-content: space-around;
@@ -1188,32 +1190,32 @@ a .control-container-checkout:hover {
   display: none !important;
 }
 .swal2-container .swal2-popup .swal2-image {
-  margin: 0px;
-  padding: 10px;
   width: 100px;
   height: 100px;
+  margin: 0px;
+  padding: 10px;
   box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
 }
 .swal2-container .swal2-popup .swal2-title {
   width: 60%;
+  height: fit-content;
   padding: 0px;
   font-size: 1.2rem;
-  height: fit-content;
 }
 
 .lds-ellipsis {
-  display: inline-block;
-  position: relative;
   width: 80px;
   height: 80px;
+  display: inline-block;
+  position: relative;
   transition: all 2s ease-in-out;
 }
 
 .lds-ellipsis div {
-  position: absolute;
-  top: 33px;
   width: 13px;
   height: 13px;
+  position: absolute;
+  top: 33px;
   border-radius: 50%;
   background: #d9737f;
   transition: all 2s ease-in-out;
@@ -1297,8 +1299,8 @@ a .control-container-checkout:hover {
   justify-content: center;
 }
 .go4109123758 .go2072408551 .go3958317564 .toast-inner .toast-inner_image_container img {
-  height: 200px;
   width: auto;
+  height: 200px;
 }
 .go4109123758 .go2072408551 .go3958317564 .toast-inner .toast-inner_image_container h4 {
   color: #d9737f;
@@ -1459,10 +1461,10 @@ a .control-container-checkout:hover {
   align-items: center;
 }
 .item-list .item-list-container {
-  justify-items: center;
-  align-items: flex-start;
   width: 60%;
   height: 100%;
+  justify-items: center;
+  align-items: flex-start;
   margin-bottom: 30px;
   margin-top: 30px;
   display: grid;
@@ -1515,13 +1517,13 @@ a .control-container-checkout:hover {
   position: absolute;
   display: flex;
   flex-direction: column;
+  width: 0;
+  height: 100%;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
-  width: 0;
-  height: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   transition: 0.5s ease;
@@ -1538,10 +1540,10 @@ a .control-container-checkout:hover {
 }
 .item-list-container_item .item-list-container_item_img_overlay .item-list-container_item_img_overlay_textBox .item-list-container_item_img_overlay_textBox_type {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40%;
   height: auto;
+  justify-content: center;
+  align-items: center;
   border-bottom-right-radius: 15px;
   background-color: rgba(0, 158, 255, 0.8);
 }
@@ -1695,9 +1697,10 @@ footer .cajaGde .cajaIzq .cajaHorario .horarioTexto {
   justify-content: flex-start;
 }
 footer .cajaGde .cajaCentro {
+  width: 33%;
+  height: 150px;
   display: flex;
   justify-content: center;
-  height: 150px;
   flex-direction: column;
   align-items: center;
   border-left: solid;
@@ -1705,7 +1708,6 @@ footer .cajaGde .cajaCentro {
   border-right-color: white;
   border-left-color: white;
   border-width: 1px;
-  width: 33%;
 }
 footer .cajaGde .cajaCentro .cajaEncontranos {
   text-align: center;

@@ -15,11 +15,10 @@ a {
     cursor: pointer;
     transition: 0.2s ease-in-out;
     .control-container-checkout-text {
+      @include sizes(fit-content,fit-content);
       color: white;
       font-size: 0.8rem;
       font-weight: 700;
-      width: fit-content;
-      height: fit-content;
     }
   }
   .control-container-checkout:hover {

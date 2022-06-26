@@ -8,8 +8,7 @@
     @include sizes(fit-content, fit-content);
     margin-bottom: 20%;
     .go3958317564 {
-      width: fit-content;
-      height: fit-content;
+      @include sizes(fit-content,fit-content);
       align-items: center;
       justify-content: center;
       margin: 0;
@@ -20,13 +19,11 @@
         justify-content: center;
         text-align: center;
         .toast-inner_image_container {
-          width: fit-content !important;
-          height: fit-content !important;
+          @include sizes(fit-content !important,fit-content !important);
           align-items: center;
           justify-content: center;
           img {
-            height: 200px;
-            width: auto;
+            @include sizes(auto,200px);
           }
           h4 {
             color: #d9737f;
