@@ -5,10 +5,10 @@
 
 # Indice
 * [Sobre el proyecto](#sobre-el-proyecto)
-* [Main Knowledge & Skills](#🛠-main-knowledge--skills)
-* [External-Resources/Dependencies](#🔗-external-resourcesdependencies)
+* [Main Knowledge & Skills](#main-knowledge--skills)
+* [External-Resources/Dependencies](#external-resourcesdependencies)
 * [Deployment](#deployment)
-* [About Me](#🚀-about-me)
+* [About Me](#about-me)
 * [Authors](#authors)
 
 
