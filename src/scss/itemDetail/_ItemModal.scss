@@ -1,6 +1,6 @@
 .item-list-container-bis {
   margin-top: 150px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   width: fit-content !important;
   .item-detail-container {
     @include display(flex, row);
@@ -21,7 +21,7 @@
       padding: 2.5%;
       .item-detail-container_right-imgTitle {
         @include sizes(100%, 20%);
-        @include display(flex, column);
+        @include display(flex, column);        
         .item-detail-container_right-imgTitle_close {
           @include sizes(23px, 23px);
           @include display(flex, row);
@@ -30,44 +30,63 @@
           bottom: 10px;
           left: 10px;
           justify-content: center;
-          align-items: center;
           border-style: solid;
           border-radius: 5px;
           background-color: rgba(0, 0, 0, 0.3);
           border-color: transparent;
           transition: 0.2s all ease-in-out;
           a {
+            @include sizes(fit-content,fit-content);
             text-decoration: none;
-            color: white;
+            color: rgba(255, 255, 255, 0.6);
             font-weight: 700;
             font-size: 0.8rem;
           }
         }
         .item-detail-container_right-imgTitle_close:hover {
           background-color: rgba(0, 0, 0, 0.8);
+          a{
+            color: rgba(255, 255, 255, 0.8);
+          }
         }
         div {
           @include sizes(100%,75%);
+          padding-bottom: 15px;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(0, 0, 0, 0.3);
+          border-bottom-width: 2px;
           img {
             @include sizes(auto,100%);
             align-self: center;
+            opacity: 0.9;
           }
         }
       }
+      .item-detail-container_right-properties{
+        @include sizes(100%, 40%);
+        justify-content: space-evenly;
+        text-align: left;
+        padding-top: 10px;
       h4 {
         font-size: 1rem;
         height: auto;
+        font-weight: 900;
+        color: rgba(0, 0, 0, 0.7);
       }
-      .item-detail-container_right-properties {
-        @include sizes(100%, 40%);
+      div {
+        @include sizes(100%, fit-content);
         align-items: flex-start;
         justify-content: center;
         text-align: left;
-        padding-top: 15px;
         p {
+          height: auto;
+          font-family: Arial, Helvetica, sans-serif;
           font-size: 0.9rem;
+          font-weight: 700;
+          color: rgba(0, 0, 0, 0.6)
         }
       }
+    }
       .item-detail-container_right-colorStock {
         @include sizes(75%, 5%);
         flex-direction: row;
@@ -164,7 +183,7 @@
   flex-direction: column !important;
   justify-content: flex-end !important;
   .swal2-popup {
-    @include sizes(20% !important,120px !important);
+    @include sizes(fit-content !important,120px !important);
     display: flex !important;
     flex-direction: row;
     justify-content: space-around;

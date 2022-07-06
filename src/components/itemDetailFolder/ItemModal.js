@@ -43,9 +43,11 @@ const ItemModal = (item) => {
             <img src={item.model_image} alt="model Icon logo" />
             </div>
           </div>
-          <h4>Propiedades y caracteristicas</h4>
           <div className="item-detail-container_right-properties">
+          <h4>Propiedades y caracteristicas</h4>
+          <div>
             <p>{item.detail}</p>
+          </div>
           </div>
           <div className="item-detail-container_right-colorStock">
             <p>Consultar disponibilidad de colores</p>

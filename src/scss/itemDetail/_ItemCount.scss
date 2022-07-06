@@ -14,17 +14,17 @@
       align-items: center;
       margin-right: 10%;
       .control-container-button {
-        @include sizes(30px, 80%);
-        border-radius: 100%;
+        display: flex;
+        @include sizes(30px, 30px);
+        border-radius: 50%;
         border-style: none;
-        background-color: #002aff;
+        background-color: rgba(0, 42, 255,0.8);
+        color: white;
+        align-items: center;
+        justify-content: center;
         transition: 0.1s ease-in-out;
         cursor: pointer;
-        .control-container-button-text {
-          @include sizes(fit-content,fit-content);
-          color: white;
-          font-size: 1.5rem;
-        }
+        font-size: 1.2rem;    
       }
       .control-container-button:active {
         background-color: #001ba1;

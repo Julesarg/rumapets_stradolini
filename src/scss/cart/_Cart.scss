@@ -1,15 +1,17 @@
 .cart-container {
-  @include display(flex, row);
+  @include display(flex, row);  
   @include sizes(100%,fit-content);
+  flex-wrap: wrap;
   justify-content: space-around;
-  align-items: flex-start;
   background-color: rgba(0, 0, 0, 0.2);
   .cart-container-inner {
     @include display(flex, column);
-    @include sizes(45%, fit-content);
+    @include sizes(850px, fit-content);
     align-items: center;
-    margin-top: 8%;
+    margin-top: 120px;
     margin-bottom: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
     padding-bottom: 20px;
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.2);

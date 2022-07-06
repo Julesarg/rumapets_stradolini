@@ -1,9 +1,11 @@
 .cart-container-checkout {
   @include display(flex, column);
-  @include sizes(45%, fit-content);
+  @include sizes(850px, fit-content);
   align-items: center;
   position: relative;
-  margin-top: 8%;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  margin-right: 5px;
   padding-bottom: 10px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);

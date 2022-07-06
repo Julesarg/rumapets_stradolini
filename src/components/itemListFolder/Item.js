@@ -28,12 +28,12 @@ const Item = (props) => {
                   <p>${props.price}</p>
                 </div>
                 <div className="item-list-container_item_img_overlay_textBox_prices_cash">
-                  <p>Efectivo/transferencia</p>
+                  <p>Deposito/transferencia</p>
                   <p>${props.price * descuentoGeneral}</p>
                 </div>
               </div>
               <button>
-                <Link to={`/item/${props.id}`}>ver detalle</Link>
+                <Link to={`/item/${props.id}`}>VER DETALLE</Link>
               </button>
             </div>
           </div>

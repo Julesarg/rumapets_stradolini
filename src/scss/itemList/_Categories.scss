@@ -9,7 +9,7 @@
   transition: 0.3s ease-in-out;
   a {
     text-decoration: none;
-    width: 5%;
+    width: fit-content;
     display: flex;
     font-weight: 500;
     color: white;
@@ -24,6 +24,7 @@
       font-size: 0.9rem;
       font-weight: 500;
       color: white;
+      cursor: pointer;
     }
     .categories-container_small:hover,
     .categories-container_medium:hover,

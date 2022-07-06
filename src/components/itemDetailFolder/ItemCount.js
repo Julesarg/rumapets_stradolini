@@ -12,13 +12,13 @@ const ItemCount = (props) => {
     <div className="control-container">
       <div className="control-container-amount">
         <button onClick={lessItem} className="control-container-button">
-          <span className="control-container-button-text">-</span>
+        -
         </button>
         <div className="control-container-number">
           <p>{stock}</p>
         </div>
         <button onClick={moreItem} className="control-container-button">
-          <span className="control-container-button-text">+</span>
+          +
         </button>
       </div>
       <button
