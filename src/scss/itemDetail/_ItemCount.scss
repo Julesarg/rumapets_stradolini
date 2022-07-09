@@ -18,13 +18,13 @@
         @include sizes(30px, 30px);
         border-radius: 50%;
         border-style: none;
-        background-color: rgba(0, 42, 255,0.8);
+        background-color: rgba(0, 42, 255, 0.8);
         color: white;
         align-items: center;
         justify-content: center;
         transition: 0.1s ease-in-out;
         cursor: pointer;
-        font-size: 1.2rem;    
+        font-size: 1.2rem;
       }
       .control-container-button:active {
         background-color: #001ba1;
@@ -34,7 +34,7 @@
         justify-content: center;
         align-items: center;
         p {
-          @include sizes(fit-content,fit-content);
+          @include sizes(fit-content, fit-content);
           font-size: 1.1rem;
           font-weight: 500;
         }
@@ -50,7 +50,7 @@
       border-style: none;
       cursor: pointer;
       .control-container-purchase-text {
-        @include sizes(fit-content,fit-content);
+        @include sizes(fit-content, fit-content);
         color: white;
         font-size: 0.8rem;
         font-weight: 700;
@@ -58,6 +58,33 @@
     }
     .control-container-purchase:hover {
       background-color: #001ba1;
+    }
+  }
+}
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  .item-detail-container_right-addButton {
+    .control-container {
+      .control-container-amount {
+        .control-container-button {
+          @include sizes(25px, 25px);
+          font-size: 1rem;
+        }
+        .control-container-number {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      .control-container-purchase {
+        @include sizes(30%, 70%);
+        .control-container-purchase-text {
+          font-size: 0.7rem;
+          font-weight: 700;
+        }
+      }
     }
   }
 }

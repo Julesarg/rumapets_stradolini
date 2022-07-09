@@ -11,7 +11,7 @@
   padding-right: 40px;
   margin-bottom: 15px;
   img {
-    @include sizes(auto,100%);
+    @include sizes(auto, 100%);
     margin-right: 50px;
   }
   .cart-container-empty_textContainer {
@@ -25,6 +25,18 @@
       font-weight: 700;
       color: rgba(0, 0, 0, 0.4);
       height: fit-content;
+    }
+  }
+}
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  .cart-container-empty {
+    .cart-container-empty_textContainer {
+      p {
+        font-size: 1.1rem;
+      }
     }
   }
 }

@@ -63,3 +63,25 @@
   @include sizes(100%,100%);
   background-color: rgba(0, 0, 0, 0.2);
 }
+
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  .cart-container {
+    .cart-container-inner {
+      @include sizes(700px, fit-content);
+      .cart-container-inner_title {
+        h5 {
+          font-size: 1.1rem;
+        }
+        .cart-container-inner_close {
+          @include sizes(20px, 20px);
+          a {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}

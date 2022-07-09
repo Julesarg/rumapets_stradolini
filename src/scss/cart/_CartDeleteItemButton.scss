@@ -1,8 +1,8 @@
 $speed: 0.5s;
 .cart-container-inner_body_product_delete {
+  @include sizes(20%, 100%);
   border-style: none;
   display: flex;
-  width: 20%;
   justify-content: center;
   align-items: center;
   background-color: transparent;
@@ -69,6 +69,38 @@ $speed: 0.5s;
       background: #c2c2c2;
       content: attr(data-front);
       transform: translateY(0) rotateX(0);
+    }
+  }
+}
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  .cart-container-inner_body_product_delete {
+    .btn-flip {
+      &:hover {
+        &:after {
+          border-radius: 5px;
+        }
+
+        &:before {
+          border-radius: 5px;
+        }
+      }
+
+      &:after {
+        border-radius: 5px;
+        height: 25px;
+        font-size: 0.5rem;
+        line-height: 25px;
+      }
+
+      &:before {
+        border-radius: 5px;
+        height: 25px;
+        font-size: 0.5rem;
+        line-height: 25px;
+      }
     }
   }
 }

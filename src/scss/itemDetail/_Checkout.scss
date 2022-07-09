@@ -15,7 +15,7 @@ a {
     cursor: pointer;
     transition: 0.2s ease-in-out;
     .control-container-checkout-text {
-      @include sizes(fit-content,fit-content);
+      @include sizes(fit-content, fit-content);
       color: white;
       font-size: 0.8rem;
       font-weight: 700;
@@ -23,5 +23,18 @@ a {
   }
   .control-container-checkout:hover {
     background-color: #002ec7;
+  }
+}
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  a {
+    .control-container-checkout {
+      @include sizes(40%, 70%);
+      .control-container-checkout-text {
+        font-size: 0.7rem;
+      }
+    }
   }
 }

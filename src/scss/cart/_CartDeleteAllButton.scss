@@ -1,6 +1,6 @@
 .deleteButton-container {
   .deleteButton-container-button {
-    @include sizes(fit-content,fit-content);
+    @include sizes(fit-content, fit-content);
     outline: none;
     border-style: none;
     border-radius: 10px;
@@ -23,7 +23,7 @@
     color: rgba(0, 0, 0, 0.6);
     .insider {
       background-color: #fff;
-      @include sizes(100%,20px);
+      @include sizes(100%, 20px);
       position: absolute;
       left: -135px;
       @include transform(rotateZ(45deg));
@@ -44,7 +44,7 @@
     color: rgba(0, 0, 0, 0.6);
     .insider {
       background-color: #fff;
-      @include sizes(100%,20px);
+      @include sizes(100%, 20px);
       position: absolute;
       left: -135px;
       @include transform(rotateZ(45deg));
@@ -58,5 +58,15 @@
         left: 135px;
       }
     }
+  }
+}
+
+//1024
+
+@media screen and (max-width: 1024px) {
+  .deleteButton-container .deleteButton-container-button {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem;
   }
 }

@@ -1,5 +1,5 @@
 footer {
-  @include sizes(100%,fit-content);
+  @include sizes(100%, fit-content);
   display: flex;
   flex-direction: column;
   margin-top: auto;
@@ -24,8 +24,10 @@ footer {
         .linksDeInteresTitulo {
           color: white;
           font-weight: 700;
+          font-size: 1rem;
         }
         .linksDeInteresTexto {
+          font-size: 0.9rem;
           width: fit-content;
           text-decoration: none;
           color: white;
@@ -46,19 +48,23 @@ footer {
         }
       }
       .cajaHorario {
+        width: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding-left: 10px;
+        padding-right: 10px;
         padding-bottom: 1%;
         .horarioTitulo {
+          font-size: 1rem;
           color: white;
           font-weight: 700;
           height: fit-content;
+          padding-bottom: 10px;
         }
         .horarioTexto {
-          @include sizes(fit-content,fit-content);
+          @include sizes(fit-content, fit-content);
+          font-size: 0.9rem;
           text-decoration: none;
           color: white;
           opacity: 0.8;
@@ -67,7 +73,7 @@ footer {
       }
     }
     .cajaCentro {
-      @include sizes(33%,150px);
+      @include sizes(33%, 150px);
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -158,9 +164,9 @@ footer {
         justify-content: center;
         align-items: flex-end;
         a {
-          @include sizes(50px,50px);
+          @include sizes(50px, 50px);
           .svg-inline--fa {
-            @include sizes(100%,100%);
+            @include sizes(100%, 100%);
             path {
               fill: white;
               opacity: 0.8;
@@ -181,12 +187,78 @@ footer {
   justify-content: center;
   background-color: #532327;
   text-decoration: none;
-  @include sizes(100%,20px);
+  @include sizes(100%, 20px);
   padding-right: 20px;
   .copyRight {
     display: inline-block;
     color: white;
     font-size: 0.7rem;
     height: fit-content;
+  }
+}
+
+//1024
+@media screen and (max-width: 1024px) {
+  footer .cajaGde {
+    .cajaIzq {
+      .cajaLinks {
+        width: 40%;
+        justify-content: space-around;
+        padding-right: 5px;
+        .linksDeInteresTitulo {
+          font-size: 0.8rem;
+          height: fit-content;
+          padding-bottom: 5px;
+        }
+        .linksDeInteresTexto {
+          font-size: 0.8rem;
+          height: fit-content;
+          margin-bottom: 5px;
+        }
+      }
+      .cajaHorario {
+        padding-right: 5px;
+        width: 60%;
+        .horarioTitulo {
+          font-size: 0.8rem;
+          padding-bottom: 5px;
+        }
+        .horarioTexto {
+          font-size: 0.8rem;
+          padding-bottom: 5px;
+        }
+      }
+    }
+    .cajaCentro {
+      .cajaEncontranos {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+      .cajaRedes {
+        a {
+          .svg-inline--fa {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+      .cajaDatos {
+        .cajasIndividuales {
+          margin-left: 0px;
+          margin-right: 0px;
+          .textoContacto {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+    .cajaDer {
+      .tuMensaje {
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
   }
 }
