@@ -4,7 +4,7 @@ const CartQuantity = ({ amount }) => {
   } else {
     return (
       <span id="imgCartCounter" className="imgCartCounter">
-        <p>{amount}</p>
+        <p className="imgCartCounter-text">{amount}</p>
         
       </span>
     );

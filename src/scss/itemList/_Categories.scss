@@ -25,6 +25,8 @@
       font-weight: 500;
       color: white;
       cursor: pointer;
+      padding-left: 10px;
+      padding-right: 10px;
     }
     .categories-container_small:hover,
     .categories-container_medium:hover,
@@ -57,7 +59,20 @@
     a {
       button {
         p {
-          font-size: 0.8rem;
+          font-size: 0.8rem;          
+        }
+      }
+    }
+  }
+}
+
+//768//
+@media screen and (max-width: 768px) {
+  .categories-container {
+    a {
+      button {
+        p {
+          font-size: 0.7rem;
         }
       }
     }

@@ -34,3 +34,22 @@
     }
   }
 }
+
+//768//
+@media screen and (max-width: 768px) {
+  .item-list {
+    .item-list-container {
+      width: 100%;
+      height: 100%;
+      justify-items: center;
+      align-items: flex-start;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 30px;
+      grid-auto-rows: auto;
+      grid-auto-flow: dense;
+    }
+  }
+}

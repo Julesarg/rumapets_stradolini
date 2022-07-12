@@ -1,26 +1,29 @@
 import React from "react";
-import NavbarToggle from "./NavbarToggle";
 import Logo from "./Logo";
 import { Link } from "react-router-dom";
+import NavbarToggle from "./NavbarToggle";
 
 //pdte responsive toggle
 const Navbar = () => {
+
   return (
     <section className="navegacion">
       <nav className="nav">
         <button
-          onClick={() => NavbarToggle()}
+          onClick={ () => NavbarToggle()}
           className="toggle"
           aria-label="open Menu"
         >
           <img src="./imgs/general/hamburgerMenu.png" alt="hamburgerMenu" />
         </button>
         <div className="container-logo-reduced">
+        <Link to="./">
           <img
             src="./imgs/general/logo.png"
             alt="logo"
             className="logoHeader"
           />
+          </Link>
         </div>
         <ul className="nav-menu">
           <li className="nav-menu-item">
