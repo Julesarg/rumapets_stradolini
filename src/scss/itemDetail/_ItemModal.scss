@@ -215,7 +215,6 @@
       .item-detail-container_left {
         overflow: hidden;
         height: 100%;
-        border-bottom-left-radius: 10px;
       }
       .item-detail-container_right {
         padding: 1.5%;
@@ -269,6 +268,112 @@
           .item-detail-container_right-return_link {
             a {
               font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  .item-list-container-bis {
+    .item-detail-container {
+      @include sizes(550px, 700px);
+      .item-detail-container_left {
+        @include sizes(40%, 70%);
+        justify-content: center;
+        img {
+          @include sizes(100%, 100%);
+          border-bottom-left-radius: 0px;
+        }
+      }
+      .item-detail-container_right {
+        align-items: center;
+        .item-detail-container_right-imgTitle {
+          @include sizes(100%, 20%);
+          .item-detail-container_right-imgTitle_close {
+            @include sizes(20px, 20px);
+            bottom: 4px;
+            left: 5px;
+            a {
+              font-size: 0.7rem;
+            }
+          }
+          div {
+            @include sizes(100%, 60%);
+          }
+        }
+        .item-detail-container_right-properties {
+          height: 45%;
+          text-align: center;
+          padding-top: 0px;
+          h4 {
+            font-size: 0.8rem;
+          }
+          div {
+            text-align: center;
+            p {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .item-detail-container_right-colorStock {
+          @include sizes(90%, 5%);
+          justify-content: center;
+          margin-top: 0px;
+          padding-bottom: 0px;
+          padding-top: 5%;
+          p {
+            font-size: 0.7rem;
+          }
+          a {
+            font-size: 0.7rem;
+          }
+        }
+        .item-detail-container_right-prices {
+          @include sizes(500px, 8%);
+          align-self: flex-end;
+          margin-right: 15px;
+          font-size: 1rem;
+          margin-top: 5%;
+        }
+        .item-detail-container_right-stock {
+          @include sizes(500px, 2%);
+          align-self: flex-end;
+          margin-right: 15px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          font-size: 0.7rem;
+          align-items: center;
+        }
+        .item-detail-container_right-advice {
+          width: 500px;
+          height: 10%;
+          align-self: flex-end;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          margin-top: 0px;
+          margin-right: 15px;
+          p {
+            font-size: 0.6rem;
+            height: fit-content;
+          }
+        }
+        .item-detail-container_right-return {
+          @include sizes(500px, 3%);
+          margin-top: 0px;
+          margin-bottom: 0px;
+          align-self: flex-end;
+          text-align: center;
+          margin-right: 15px;
+          .item-detail-container_right-return_link {
+            @include sizes(100%, 100%);
+            padding: 2%;
+            a {
+              font-size: 0.7rem;
             }
           }
         }

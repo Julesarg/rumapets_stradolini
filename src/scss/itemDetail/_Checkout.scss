@@ -27,7 +27,6 @@ a {
 }
 
 //1024
-
 @media screen and (max-width: 1024px) {
   a {
     .control-container-checkout {
@@ -35,6 +34,15 @@ a {
       .control-container-checkout-text {
         font-size: 0.7rem;
       }
+    }
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  a {
+    .control-container-checkout {
+      @include sizes(40%, 80%);
     }
   }
 }

@@ -63,7 +63,6 @@
 }
 
 //1024
-
 @media screen and (max-width: 1024px) {
   .item-detail-container_right-addButton {
     .control-container {
@@ -83,6 +82,40 @@
         .control-container-purchase-text {
           font-size: 0.7rem;
           font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  .item-detail-container_right-addButton {
+    @include sizes(500px, 5%);
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 15px;
+    .control-container {
+      align-items: center;
+      justify-content: center;
+      .control-container-amount {
+        width: 33%;
+        margin-right: 0px;
+        justify-content: center;
+        .control-container-button {
+          @include sizes(25px, 25px);
+          font-size: 1rem;
+        }
+        .control-container-number {
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+      .control-container-purchase {
+        @include sizes(33%, 80%);
+        .control-container-purchase-text {
+          font-size: 0.7rem;
         }
       }
     }

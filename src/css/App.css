@@ -988,6 +988,12 @@ a .control-container-checkout:hover {
     font-size: 0.7rem;
   }
 }
+@media screen and (max-width: 768px) {
+  a .control-container-checkout {
+    width: 40%;
+    height: 80%;
+  }
+}
 .item-detail-container_right-addButton {
   width: 100%;
   height: 6%;
@@ -1079,6 +1085,39 @@ a .control-container-checkout:hover {
   .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
     font-size: 0.7rem;
     font-weight: 700;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-detail-container_right-addButton {
+    width: 500px;
+    height: 5%;
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 15px;
+  }
+  .item-detail-container_right-addButton .control-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .item-detail-container_right-addButton .control-container .control-container-amount {
+    width: 33%;
+    margin-right: 0px;
+    justify-content: center;
+  }
+  .item-detail-container_right-addButton .control-container .control-container-amount .control-container-button {
+    width: 25px;
+    height: 25px;
+    font-size: 1rem;
+  }
+  .item-detail-container_right-addButton .control-container .control-container-amount .control-container-number p {
+    font-size: 1rem;
+  }
+  .item-detail-container_right-addButton .control-container .control-container-purchase {
+    width: 33%;
+    height: 80%;
+  }
+  .item-detail-container_right-addButton .control-container .control-container-purchase .control-container-purchase-text {
+    font-size: 0.7rem;
   }
 }
 .item-detail-general {
@@ -1338,7 +1377,6 @@ a .control-container-checkout:hover {
   .item-list-container-bis .item-detail-container .item-detail-container_left {
     overflow: hidden;
     height: 100%;
-    border-bottom-left-radius: 10px;
   }
   .item-list-container-bis .item-detail-container .item-detail-container_right {
     padding: 1.5%;
@@ -1390,6 +1428,119 @@ a .control-container-checkout:hover {
   }
   .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-return .item-detail-container_right-return_link a {
     font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .item-list-container-bis .item-detail-container {
+    width: 550px;
+    height: 700px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_left {
+    width: 40%;
+    height: 70%;
+    justify-content: center;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_left img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius: 0px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right {
+    align-items: center;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle {
+    width: 100%;
+    height: 20%;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle .item-detail-container_right-imgTitle_close {
+    width: 20px;
+    height: 20px;
+    bottom: 4px;
+    left: 5px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle .item-detail-container_right-imgTitle_close a {
+    font-size: 0.7rem;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-imgTitle div {
+    width: 100%;
+    height: 60%;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties {
+    height: 45%;
+    text-align: center;
+    padding-top: 0px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties h4 {
+    font-size: 0.8rem;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties div {
+    text-align: center;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-properties div p {
+    font-size: 0.8rem;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock {
+    width: 90%;
+    height: 5%;
+    justify-content: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    padding-top: 5%;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock p {
+    font-size: 0.7rem;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-colorStock a {
+    font-size: 0.7rem;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-prices {
+    width: 500px;
+    height: 8%;
+    align-self: flex-end;
+    margin-right: 15px;
+    font-size: 1rem;
+    margin-top: 5%;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-stock {
+    width: 500px;
+    height: 2%;
+    align-self: flex-end;
+    margin-right: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 0.7rem;
+    align-items: center;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-advice {
+    width: 500px;
+    height: 10%;
+    align-self: flex-end;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 15px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-advice p {
+    font-size: 0.6rem;
+    height: fit-content;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-return {
+    width: 500px;
+    height: 3%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: flex-end;
+    text-align: center;
+    margin-right: 15px;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-return .item-detail-container_right-return_link {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+  }
+  .item-list-container-bis .item-detail-container .item-detail-container_right .item-detail-container_right-return .item-detail-container_right-return_link a {
+    font-size: 0.7rem;
   }
 }
 .lds-ellipsis {
