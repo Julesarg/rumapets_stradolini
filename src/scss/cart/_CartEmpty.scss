@@ -30,12 +30,22 @@
 }
 
 //1024
-
 @media screen and (max-width: 1024px) {
   .cart-container-empty {
     .cart-container-empty_textContainer {
       p {
         font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  .cart-container-empty {
+    .cart-container-empty_textContainer {
+      p {
+        font-size: 1rem;
       }
     }
   }

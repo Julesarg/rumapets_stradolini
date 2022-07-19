@@ -74,7 +74,6 @@ $speed: 0.5s;
 }
 
 //1024
-
 @media screen and (max-width: 1024px) {
   .cart-container-inner_body_product_delete {
     .btn-flip {
@@ -100,6 +99,20 @@ $speed: 0.5s;
         height: 25px;
         font-size: 0.5rem;
         line-height: 25px;
+      }
+    }
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  .cart-container-inner_body_product_delete {
+    .btn-flip {
+      &:after {
+        font-size: 0.45rem;
+      }
+      &:before {
+        font-size: 0.45rem;
       }
     }
   }

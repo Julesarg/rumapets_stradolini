@@ -460,6 +460,21 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
     font-size: 0.8rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .cart-container .cart-container-inner {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 550px;
+    height: fit-content;
+  }
+  .cart-container .cart-container-inner .cart-container-inner_title h5 {
+    font-size: 1rem;
+  }
+  .cart-container .cart-container-inner .cart-container-inner_title .cart-container-inner_close a {
+    font-size: 0.7rem;
+  }
+}
 .cart-container-checkout {
   display: flex;
   flex-direction: column;
@@ -531,9 +546,27 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
   }
   .cart-container-checkout .cart-container-checkout_texts_container p {
     font-size: 1.1rem;
+    padding-left: 0px;
   }
   .cart-container-checkout .cart-container-checkout_texts_container .cart-container-checkout_texts_container_final {
     font-size: 1.2rem;
+    padding-left: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cart-container-checkout {
+    width: 550px;
+    height: fit-content;
+    margin-right: 0px;
+  }
+  .cart-container-checkout .cart-container-checkout_title h5 {
+    font-size: 1rem;
+  }
+  .cart-container-checkout .cart-container-checkout_texts_container p {
+    font-size: 1rem;
+  }
+  .cart-container-checkout .cart-container-checkout_texts_container .cart-container-checkout_texts_container_final {
+    font-size: 1.1rem;
   }
 }
 .deleteButton-container .deleteButton-container-button {
@@ -627,6 +660,13 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .deleteButton-container .deleteButton-container-button {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.6);
+  }
+}
 .cart-container-inner_body_product_delete {
   width: 20%;
   height: 100%;
@@ -715,6 +755,14 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
     line-height: 25px;
   }
 }
+@media screen and (max-width: 768px) {
+  .cart-container-inner_body_product_delete .btn-flip:after {
+    font-size: 0.45rem;
+  }
+  .cart-container-inner_body_product_delete .btn-flip:before {
+    font-size: 0.45rem;
+  }
+}
 .three {
   border-color: #fff;
   overflow: hidden;
@@ -791,6 +839,11 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
 @media screen and (max-width: 1024px) {
   .cart-container-empty .cart-container-empty_textContainer p {
     font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cart-container-empty .cart-container-empty_textContainer p {
+    font-size: 1rem;
   }
 }
 .cart-container-inner_body {
@@ -944,6 +997,28 @@ body div .fixedTop .headerBox_right a .imgCartCounterEmpty {
   }
   .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_quantity .cart-container-inner_body_product_quantity_inner .cart-container-inner_body_product_quantity_buttons p {
     font-size: 0.75rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cart-container-inner_body .cart-container-inner_body_product {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_image img {
+    width: 60px;
+    height: 60px;
+  }
+  .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_title .cart-container-inner_body_product_title_texts p {
+    font-size: 0.6rem;
+  }
+  .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_price .cart-container-inner_body_product_price_texts p {
+    font-size: 0.6rem;
+  }
+  .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_quantity p {
+    font-size: 0.6rem;
+  }
+  .cart-container-inner_body .cart-container-inner_body_product .cart-container-inner_body_product_quantity .cart-container-inner_body_product_quantity_inner .cart-container-inner_body_product_quantity_buttons p {
+    font-size: 0.6rem;
   }
 }
 a {

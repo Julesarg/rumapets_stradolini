@@ -11,18 +11,18 @@ const CartCheckout = ({ products, taxes, discount, total }) => {
       </div>
 
       <div className="cart-container-checkout_texts_container">
-        <p>Costos por embalaje:</p>
+        <p>Costos por embalaje</p>
         <p>${taxes}</p>
       </div>
 
       <div className="cart-container-checkout_texts_container">
-        <p>Descuento HOTSALE:</p>
+        <p>Descuento HOTSALE</p>
         <p>${discount}</p>
       </div>
 
       <div className="cart-container-checkout_texts_container">
         <p className="cart-container-checkout_texts_container_final">
-          Total de tu compra:
+          Total de tu compra
         </p>
         <p className="cart-container-checkout_texts_container_final">
           ${total}

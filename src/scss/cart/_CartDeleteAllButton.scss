@@ -62,11 +62,19 @@
 }
 
 //1024
-
 @media screen and (max-width: 1024px) {
   .deleteButton-container .deleteButton-container-button {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 1rem;
+  }
+}
+
+//768
+@media screen and (max-width: 768px) {
+  .deleteButton-container .deleteButton-container-button {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: rgba(0, 0, 0, 0.6);
   }
 }
