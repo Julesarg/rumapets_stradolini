@@ -12,6 +12,15 @@ const Logo = () => {
           />
         </Link>
       </li>
+      <li className="nav-menu-img-mobile">
+        <Link to="./">
+          <img
+            src="./imgs/general/logo.png"
+            alt="logo"
+            className="logoHeader"
+          />
+        </Link>
+      </li>
     </>
   );
 };

@@ -40,6 +40,9 @@
 @media screen and (max-width: 768px) {
   .headerBox_right {
     a {
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin: 0px;
       .headerBox_right-img-container {
         @include sizes(fit-content, 30px);
         .imgCart {

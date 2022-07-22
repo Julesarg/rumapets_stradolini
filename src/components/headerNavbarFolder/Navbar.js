@@ -1,53 +1,27 @@
-import React from "react";
-import Logo from "./Logo";
-import { Link } from "react-router-dom";
-import NavbarToggle from "./NavbarToggle";
+import React, { useState } from "react";
+import NavBarLinksMobile from "./NavBarLinksMobile";
+import NavbarLinks from "./NavbarLinks";
+import {GiHamburgerMenu} from "react-icons/gi";
+import {IoClose} from "react-icons/io5";
+import {UseState} from "react";
 
-//pdte responsive toggle
-const Navbar = () => {
+const Navbar = ()=> {
+
+  const [open,setOpen] = useState(false);
+
+  const hamburgerOpen = <GiHamburgerMenu onClick={ ()=> setOpen(!open)} className="hamburger animate__animated animate__fadeIn"/>
+  const hamburgerClose = <IoClose onClick={ ()=> setOpen(!open)} className="hamburgerClose animate__animated animate__fadeIn"/>
+  const closeMenu = () => setOpen(false);
 
   return (
     <section className="navegacion">
       <nav className="nav">
-        <button
-          onClick={ () => NavbarToggle()}
-          className="toggle"
-          aria-label="open Menu"
-        >
-          <img src="./imgs/general/hamburgerMenu.png" alt="hamburgerMenu" />
-        </button>
-        <div className="container-logo-reduced">
-        <Link to="./">
-          <img
-            src="./imgs/general/logo.png"
-            alt="logo"
-            className="logoHeader"
-          />
-          </Link>
-        </div>
-        <ul className="nav-menu">
-          <li className="nav-menu-item">
-            <div className="textoNavBar">INICIO</div>
-          </li>
-          <li className="nav-menu-item">
-            <Link to="./">
-              <div className="textoNavBar">PRODUCTOS</div>
-            </Link>
-          </li>
-          <li className="nav-menu-item">
-            <div className="textoNavBar">MATERIALES</div>
-          </li>
-          <Logo />
-          <li className="nav-menu-item">
-            <div className="textoNavBar">PAGOS Y ENVIOS</div>
-          </li>
-          <li className="nav-menu-item">
-            <div className="textoNavBar">CLIENTES</div>
-          </li>
-          <li className="nav-menu-item">
-            <div className="textoNavBar">NOSOTROS</div>
-          </li>
-        </ul>
+        <NavbarLinks />
+      </nav>
+      <nav className="navMobile" >
+        {open ? hamburgerClose : hamburgerOpen}
+        {open && <NavBarLinksMobile mobile={true} closeMenu={closeMenu}/>
+}
       </nav>
     </section>
   );

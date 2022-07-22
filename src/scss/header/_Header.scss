@@ -8,6 +8,12 @@
     display: flex;
     @include sizes(100%, 40px);
     background-color: white;
+    .nav-menu-img{
+      display: none;
+    }
+    .nav-menu-img-mobile{
+      display: none;
+    }
     .headerBox_left {
       display: flex;
       @include sizes(50%, 100%);
@@ -70,15 +76,30 @@
 //768//
 @media screen and (max-width: 768px) {
   body div .fixedTop .headerBox {
-    height: 30px;
+    height: 100px;
+    .nav-menu-img-mobile{
+      display: flex;
+      height: 100%;
+      a{
+        .logoHeader{
+          @include sizes (auto,100%);
+        }
+      }
+    }
     .headerBox_left {
+      justify-content: center;
+      align-items: flex-end;
       p {
-        padding-right: 40px;
+        height: fit-content;
+        padding-right: 20px;
       }
     }
     .headerBox_right {
+      justify-content: space-between;
+      align-items: center;
       p {
-        padding-left: 40px;
+        height: fit-content;
+        padding-left: 20px;
       }
     }
   }
